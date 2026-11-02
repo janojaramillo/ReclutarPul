@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0b0b0d">
+<meta name="color-scheme" content="dark">
+<title>Hipoxemia esencial · NEOPEDS Academy</title>
+<meta name="description" content="CDSS de marcadores de hipoxemia, edición esencial de cuatro módulos. Funciona sin conexión.">
+
+<!-- ══ App instalable · iOS ══ -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Hipoxemia E">
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAADB0lEQVR42u3dvVEyURSA4SNDIwYExmQ0YQHaBJXYBPRgBWTEBATk1mBgwAzDID/Lz1327nne6Jsvctxnzj274vry8/0e0rEGvgWCQ3AIDsEhOASH4BAcgkNwSHAIDsEhOASH4BAcgkNwCA4JDsEhOASH4BAc6nZD34JKe/1cbf+xmb3BkfTa93NyLJbriJiMR650xxGYHCjAQQMcNMDBBBxAwMFEoa+n0KMOOPowJwr58Pi8DyeIyYFFGyDgqANEC5cfjq7LeDoCOMIwgOP2bb/EzKhLAxzHz5EHyqgaBBxFNozemIDDwQFHmUeKPQaRHcc9S0YSFpHz8fk9S0YqGekmxw0ysoFIOjl6//ELOMrKOJgTmcdGFhxXzYzN7G1rIrmMFDjclcDxmMtsLzE5DIz0t7LXjgEyskwOMuAgAw4/VoXDBmohfaaMnYZyvyhmcnhbEhx+tAZHKhkMOVYsoXBcOQzIMDkEh7EBh1UDDrevcBgbcHT2Y8MyOZQYh7EBh+AwNuAQHMYGHOGhBRwVTg6AIudnSA8uvCfoJsfl34s3NuBwjjhWGu8cOxbbtxBTkndy/N8w9v+HjLw4Tu2edtLsOM4L4MOxIjgEh+CIFp5kuE/JPjlOCSADjuMOyIjMT0gPnnvSYHKU+hts6gmOfRN8wHHBCiJ2jqbjxP6RdHIYEnD4gA8cgsOZAofgsHDAIVWDw8IBhzMFDjLgaO1MceiYHCYHHI0vv78inh3HmY/2OE1S43D54bh9mXCmmByCgww43MHCITicKXBIAwuHTA7VicPCAYcXmcPhkTkcPtoDhzMFDnew6hQO5wUcgsPYgMPCAYebFHk/hzqFw58MhkNwGBtwuAGBw32K7BzqGg5jI7z73BMLOC708fUbEREr66pjRXC4y3WsYKGBJVTdnRzz6XCxXLsSNzcZjyqbHA1Pivl06OqaHG2rV613K94oanKcO27IgMP9Khw02DkEhwSH4BAcgkNwCA7BITgEh+AQHBIcgkNwCA7BITgEh+AQHIJDgkPN+gPbwC41Pfm9wAAAAABJRU5ErkJggg==">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAADB0lEQVR42u3dvVEyURSA4SNDIwYExmQ0YQHaBJXYBPRgBWTEBATk1mBgwAzDID/Lz1327nne6Jsvctxnzj274vry8/0e0rEGvgWCQ3AIDsEhOASH4BAcgkNwSHAIDsEhOASH4BAcgkNwCA4JDsEhOASH4BAc6nZD34JKe/1cbf+xmb3BkfTa93NyLJbriJiMR650xxGYHCjAQQMcNMDBBBxAwMFEoa+n0KMOOPowJwr58Pi8DyeIyYFFGyDgqANEC5cfjq7LeDoCOMIwgOP2bb/EzKhLAxzHz5EHyqgaBBxFNozemIDDwQFHmUeKPQaRHcc9S0YSFpHz8fk9S0YqGekmxw0ysoFIOjl6//ELOMrKOJgTmcdGFhxXzYzN7G1rIrmMFDjclcDxmMtsLzE5DIz0t7LXjgEyskwOMuAgAw4/VoXDBmohfaaMnYZyvyhmcnhbEhx+tAZHKhkMOVYsoXBcOQzIMDkEh7EBh1UDDrevcBgbcHT2Y8MyOZQYh7EBh+AwNuAQHMYGHOGhBRwVTg6AIudnSA8uvCfoJsfl34s3NuBwjjhWGu8cOxbbtxBTkndy/N8w9v+HjLw4Tu2edtLsOM4L4MOxIjgEh+CIFp5kuE/JPjlOCSADjuMOyIjMT0gPnnvSYHKU+hts6gmOfRN8wHHBCiJ2jqbjxP6RdHIYEnD4gA8cgsOZAofgsHDAIVWDw8IBhzMFDjLgaO1MceiYHCYHHI0vv78inh3HmY/2OE1S43D54bh9mXCmmByCgww43MHCITicKXBIAwuHTA7VicPCAYcXmcPhkTkcPtoDhzMFDnew6hQO5wUcgsPYgMPCAYebFHk/hzqFw58MhkNwGBtwuAGBw32K7BzqGg5jI7z73BMLOC708fUbEREr66pjRXC4y3WsYKGBJVTdnRzz6XCxXLsSNzcZjyqbHA1Pivl06OqaHG2rV613K94oanKcO27IgMP9Khw02DkEhwSH4BAcgkNwCA7BITgEh+AQHBIcgkNwCA7BITgEh+AQHIJDgkPN+gPbwC41Pfm9wAAAAABJRU5ErkJggg==">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIkhpcG94ZW1pYSBlc2VuY2lhbCDCtyBORU9QRURTIiwgInNob3J0X25hbWUiOiAiSGlwb3hlbWlhIEUiLCAiZGVzY3JpcHRpb24iOiAiQ0RTUyBkZSBtYXJjYWRvcmVzIGRlIGhpcG94ZW1pYSDigJQgZWRpY2nDs24gZXNlbmNpYWwsIGN1YXRybyBtw7NkdWxvcywgc2luIGhpc3RvZ3JhbWFzLiIsICJzdGFydF91cmwiOiAiLi9pbmRleC5odG1sIiwgInNjb3BlIjogIi4vIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdCIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMwYjBiMGQiLCAidGhlbWVfY29sb3IiOiAiIzBiMGIwZCIsICJsYW5nIjogImVzIiwgImljb25zIjogW3sic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBTUFBQUFEQUNBSUFBQURkdnZ0UUFBQURJRWxFUVZSNDJ1M2RQVklxUVJTQTBhdkZSZ2dJak1uWWhBdVFUYkFTTnlGN2NBVmt4QVFFNXE3QndNQXFBditBbmhsNjd2VDV3bGN2a2xQM2RqTW9kKyt2anlHVmR1OUhJSUFFa0FBU1FCSkFBa2dBQ1NBSklBRWtnQVNRQkpBQUVrQUNTQUpJQUFrZ0FTU0FKSUFFa0FBU1FCSkFBa2dBQ1NEcGoyWitCSG1icnc5bi84L2J5ME51UUx2OU1TSld5NFhYZXpnbEpwQVNXQUdJR0lDSUFRZ2FnTlM2RzRDNEFRaWE4RTQwUFNZUU5BQXBxNTZobjFRQU5BVTMxWlVBMUpYT3pWN0NNVnNCcUh6d0REZCswb2tCcVBMZ3lTNEdvQXFEWjJKb0FITDRCV2lzdDYwVzBJUjNvZ2ZhV2EzcE1ZRjYwTk1nR2hPb3Q1M1Z1QjZBT2swZGVsb0haUFlBZEZNOUJvOURkS0dlRXhwNlRLQnlQUUxJWjhFQXFuSHVFVUFsR3VoeGlIYjBNWUhvQVNqWDhxTEhDaXNmUC9TWVFQUUFWR041MFdPRmxZOGZlZ0FxMUlPT0ZkWnA5bmk0QVpEZm5iRENMQzhUeUpONWdOcjYrKzBtRUVDT1BnRFYyRXFXRjBER0QwQXVYd0FKSU9OSEFBa2c0d2NndHlxQWZIdW9uSUVFa1BFRGtDZnE0Zk5BMlk3UHYzb3lma3lnS3p6aEFsQ2ZqSGl5d2k0OUEzMnpnZzVBMXgyZnYvNkZHeXVzMCtYTHZRd2dBVlQxdlI5RENDQUJKSUNrQ1FJNmUxRjNrd2RJQUZVYVFzWVBRSmMrdVBqNTdJS2U4Q2pEcDZGTklKOGdBMmpFZE9ickEwWUE5ZUFKSTJlZ0FUOFBKQlBJMFFjZ0FlUStyOXlBN0MrQUJKRDlwWXlBN0MrQUJKRDlKUk5JelFINjZ3Qms2Z0RVRlpZdlRBR28wLzNyWkVnQXVlRURWT09HWlFJQmRHYTYvRE5qNkFGSUFQbmxMNEF5N2k4QkpJRHNMNERzTDFsaEFzaitBc2orQWtqS0Q4aitBc2orQXNobk01UUxrTCs5Q3BBSkJCQTltdVExM3Y0Q3lQZ0JpQjZORFpEZEJORGdFd2d5Z003bzhmZ0NJRitpQzlBb2o4OG1FRURtQ2tEdWFCb1BJTXNMSUhORm81OUFBc2orQ2wvM1pQQ29IcUNuNTQrSWlEZzRKRmxoanRqeWUyR2FOaURqeHhtbzhOU01Ea0RsYlRlejNmN285ZWk5MVhLUmVJVmRPRlMybTVsWDJnUnk2QUVJSGFVQWhBNUE2T2dtZ0lnSmJ5UktBQWtnQVNTQUpJQUVrQUFTUUFKSUFrZ0FDU0FCSkFFa2dBU1FBSklBRWtBQ1NBQkpBQWtnQVNTQXBQZ0VzNGxIeDlVR0xVb0FBQUFBU1VWT1JLNUNZSUk9IiwgInNpemVzIjogIjE5MngxOTIiLCAidHlwZSI6ICJpbWFnZS9wbmciLCAicHVycG9zZSI6ICJhbnkifSwgeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFnQUFBQUlBQ0FJQUFBQjdHa090QUFBTnZFbEVRVlI0MnUzZFBYTGNWaGFHNFU4dWJvUUJBOGJNdUFrdHdOekVyTVNia1BlZ0ZTaFR6RUNCY3EzQndRUmQxWVZDTjBHUTZDWnh6M21lY2pEanNmeERUNTBYOStJQytQTG4rOWNBME05ZmZnUUFBZ0NBQUFBZ0FBQUlBQUFDQUlBQUFDQUFBQWdBQUFJQWdBQUFJQUFBQ0FBQUFnQ0FBQUFnQUFBSUFBQUNBSUFBQUNBQUFBZ0FBQUlBZ0FBQUlBQUFBZ0NBQUFBZ0FBQUlBQUFDQUlBQUFDQUFBQWdBQUFJQWdBQUFJQUFBQ0FBQUFnQ0FBQUFnQUFBSUFBQUNBSUFBQUNBQUFBZ0FBQUlBZ0FBQUlBQUFBZ0NBQUFBZ0FBQUlBQUFDQUlBQUFDQUFBQWdBQUFJQWdBQUFJQUFBQ0FBQUFnQ0FBQUFnQUFBSUFBQUNBSUFBQUNBQUFBZ0FBQUlBZ0FBQUlBQUFDQUNBQUFBZ0FBQUlBQUFDQUlBQUFDQUFBQWdBQUFJQWdBQUFzRk0zZmdSQVNiZFB6d3YvNis5djkzNUVBZ0JVRys0SUFHREVJd0NBS1k4QUFLWThBZ0NZOVFMUTFZK2Z2MDUvNStQRG5mOWJnRmt2QUFCbXZRQUF4ajBDQUpqNENBQmcxaU1BZ0tHUEFBQW1QZ0lBZk1URS8vM3QzdHduWGdjTmZTN3piNStlai8vQnp3UXJBT2l5dldQb0l3QmdXeDhFQU14OUVBQXc5MEVBd054dng3RW9BUUJ6SHdRQXpIMFFBREQzWTVjR0FRQnpId0VBekgwRUFERDNFUURBM0NkZUJnZVkvcVA4eFB6ckVBRDRpQ2wyZkNWbnhqeUtrNkpIalB5Zk03YUF3QVVtV0FHQTZiK2pmeFlYNlZZQVlGWjZ4a3BnQkFCTWYyc1V3MTBBd0NSdHZsWXc0Z1VBakg0WDhnZ0FHUDFYdUs3L2dIOVlVMTRBd09oM1JZOEFnT2svL2orTFdTOEFZRnpXM3l3eTZ3VUFzSTJEQUlDci9rS0hPMDE4QVFEVDN3VStBZ0NtZjYwbnNBeDlCQUNqLzduUDM0eWhqd0NBMStPQUFHRDBHL29nQUpqK243N0wvKzU3QUlZKzhVRVkyUG1GLyszVDg4S3dmdXZmM3U5djk0ZmYvSnZGQ2dCZW4vNTdhSUFkSHF3QW9QSzEvNVpKZmZiWHV0aEhBT0ROby85VHJ2clA3dllzVC9Eai96cjlHN2JQUTJ3QlFZM1RQbDYxaGhVQTFCLzk3L2g3Y0xHUEFNQkk5M3ZYait6bE02RCt4UkZiUUREV3RmK2Ivb3FuZjdEUmp3QkF2SUFUWWdzSVJ0ejZYem5XVFg4RUFCcDk5dmJ3QzkzalJRQmcxRnUrVzA1d0d2MElBSXczL1RjKzFtdjBJd0F3Nm83L3lxTTdoei9zdU52anFoOEJnQW83L204YTVhWS9BZ0JqWC90UC95cXp2K0pMTDNidS9IRjVCQUJLbmZWODArdjdiZmNqQUpBeWoyaXRpWTBOSHdRQUtseitMMysweXhGUEJBQ3F2ZGwvTnNIWEQzU2pId0dBNFMvOGMrNDBwd1ArQ0FEVXYrczduZWErMllJQVFOK252VjY2R2VEQ0h3R0FJYWYvbTJhM2QvY2pBRkRuMm4vTElSL1RId0dBanQ5ek4vMFJBQmgrNE00V0FXdE8rL2pYZ1FCQXdjdi9Rdy9jN3dVQm9NVXIvdGZjQ1RENkVRQ29mK2pUZS94QkFPaCs0OWYwUndDZzNVa2I3L0dISkRkK0JIUWJ3Uzc1d1FxQXBwcy9MdjlCQUdpOTlROElBSlcvN1c3Nmd3RFE2OXZ1QzQ5NitiY0FBa0Q5blo5WkJreC9FQUJTZnVkOUdodUgvVUVBMEI1QUFNaW9XMERyUjdtem5pQUE3R0wwWDJvY0w5emcxUUFRQUlyZis1Mit5czNPRHdnQXZVNytyR21BNlE4Q1FLcCs1MnZoejIvNmd3QlErY2J2U3cwdy9VRUFLTEwvczNEajk3UUJwajhJQUtWMi94YzJmRTQvN3dVSUFBV0xzbklkQUFnQVhRNy9PUElQQWtEVGRZRExmeEFBNnIvMTA0MWZFQUJhdi9IZmpWOFFBSnErOGQrTlh4QUFtcjdzMDQxZkVBQ3FWV1Q5eXo1ZC9vTUEwT1c4ditrUEFrQ1g1MzY5NncwRWdIYjNmbzkvenRNTW1QNGdBRlNiL3JQSlB2dXd1ME9mSUFBMGFzbnNXNUttUHdnQVBpa01DQUE5bnZ4eTdROENRT3ZuZmdFQklMNHREQWdBbzE3K3I1L3BwajhJQUIzZittRDZnd0JRODJ2dnl5UGU5SWVydXZFallDZHYvbkduRjZ3QUtIdjUvOUlWL2ZHa3YrOThnUlVBbGZmOUYwSmlFUUJXQUl6OXJ1YVZiM2x6N3hjRWdGNDNnVjl0Z09rUEFrRFpSMzlYcmdNQUFhQnlUalFBQklEV1gzMkovUjhRQUZMcmhUekx2MnAyQU5UMGh6Z0dTcGxGd0pwSHZiWWZMZ0tzQU5qcDVzK3IzM2tIckFCbzFBQ1BmWUVWQUkzdS9iNzBqVjhyQXhBQWVuM2oxNzFmRUFBOEJ3QUlBTFgyZnhibSszUXBBQWdBZzMyeGEyTkZYUDZEQUxEZnpmcEx6V2l6SGdTQXdUWi9MdldVbGsrK2dBRFEvVHZBSGdjREFhRDF2VjhOQUFIQXQ4T0FlQlVFTy9wczc2VmUvM0QyeFEvQ0FGWUExRHo4TS8yMTB4YyttL3V3SzEvK2ZQL2E5aC8reDg5ZnA3L3o4ZUhPN3Y5MGxGL3dXUzBCQUNzQXV0d1FuazE4ai82Q0FORHJvNC9PL29NQWtKNmZpblQySCtJVUVPVlBmUHJvSTFnQjBHNy94MUVmc0FMQVV1RGUyWCt3QXFEN1lzS0NBS3dBNlBqaDMrUG8xd0N3QWtCWEFBR2d4NWoyNUJjSUFBQnhENENSWHRxOC9mcmREUUFRQURMaVE3eXo5M3FlL1FOczhrQnNBVkcrRnFmQjhJZ3ZXQUhRYTlFd3UrcjM0UmV3QXFEdjN0SHN3eTlHUDhRSFllS0RNR2wzaXRUMEJ5c0FtdDVHZHZ3ZkJJQytEYkFJQUFIQWNWSWdUZ0dSNFY0SXNYNnlleUFBQklCUzd3SjYzekYvQ3dJUUFJcThCbTVsQnBhL0NnbkVQUUFHZlFub3lsL2k4aDhFZ0lLdmdIWjFEd0pBM3c4QWFBQUlBSDAvLzZJQklBRDAvZmlYQm9BQUFDQUFOUHYycjBVQUNBQUFBa0NieTMrTEFCQUFBQVFBQUFFQVFBQUFFQUFBQkFBQUFRQkFBTWhnMyt6MTZuOFFBQUFFZ0RhTEFKZi9JQUFBQ0FCdEZnRXUvMEVBNk5nQTB4OEVnSTROTVAxQkFPallBTk1mQklDT0RURDlvWmdiUDRMbURWanpVUmVqSHdTQWpQTHhyL1VqZXprRFJqOElBTVgzOXcxNmlIc0ErUHd2SUFDTU92cHZuNTRQdi9tWkFBTFE5UEpmQXdBQmtBUUFBZWczNkcwSEFRS2dFQUFDMExVQk1nQUlRT29kLzE5NWxsOEdnSGdRck5qVi9iRUJhK2I3OUk5WktNZnhEL09rR0FnQU94MzlwOE42L1dXK0JRSEVGaEJsanYrdm5PbXU2OEVLQUcrT2kxZkNnUURRN25Ebk1RT3ZsZ0FRQUNyZlM1aGQ4b3NCeEQwQWVqNG9ZUDhIQkFEUGl3RUNRSU8zTzhnQUNBQUFBZ0NBQUpDaDN2L3prWjhYQmdTQWZOaGpYQ1kxRU04QmVQK1BIdzVnQmVEOVA3R3hBMWdCNFAwL2dBQTQvdS85UDRBQTRQMC9FUGNBOE9LSDJQOEJBU0Q5anY5NzhRTUlBSzJQLzhzQXhEMEFIUDhIckFCdy9CK3dBc0R4ZjBBQWNQd2ZFQUFjL3dmaUhnQ08vd01DZ00vL0FnS0F6LzhDQWdDQUFBQWdBT1R6OW4vaTlpOElBQUFDUVBiMitrOC9CRUFBWXY5SE9RQUIwSUMxdjNENTNkRTZBZkVxQ0pxL0NRNFFBR3FlL3puN0pSa3hBQUdnWFZRT0diRC9BM0VQQUM4Q0FnU0FGUDcrTzRBQXlJRDlIeEFBTXNEdFg2c0JJRzRDTjJ6QTlBTmVOdTRCQVdoNmRPY1FnKzBac0o0QUFXQ2s0Lyt6WllIVkFCRDNBSFJpL1QxazEvNkFGVURmOTBCb0FQRGx6L2V2YmYvaGYvejhkZm83SHgvdUNuOEh4dHdIWWdzb0xZLy9lL29YRUlBNC9nL0VQUUFjL3djRUFNZi9BUUhBOFg4ZzdnSGcrRDlnQllEai80QVZBQ045OWNYb0J3U2d4ZWQvSGY4SEJBQUFBUUJBQU5Mdjg3L3VBUUFDNEN2d0FBSVE3LzhCNGprQXZQOEhFQUM4L3djUUFMei9CNGg3QUhqL0QyQUZnUGYvQVBGTjRQZ21zTS8vQXJFRmhNLy9BZ0tBNC85QTNBUEE4WDlBQUhEOEh4QUE0OTd4ZnlEdUFlRDRQMkFGZ09QL2dCVUFQdjhMQ0FDTy93TUM0UHZ2QUFJUXovMENDSUFNT0FJRUNFRDJ2Zmt6TytsdlhnTUMwS3NCWjk4RDRkb2ZpT2NBdlA3aGZYOUNEUUFFd09zZkFHSUxxTXNoVVpmL2dCVkE5bm5zeDZNQWdCV0FHRnp5OE0vaFQrWHlIeENBakxLcmM2bVJiVDBCeEJiUVdCLy9PdjVuRXh5d0FtajB2clpyUEFjQVlBVXc1T25QTFVzQkNRRUV3Q3RDQVdJTEtJVVBrcnIyQndTZzF5cmg3UGxSRFFCaUMyaTNsKzJYMnVFNSsvbGZBQUhZZFFZdU9Lek5mU0MyZ0h3QkJrQUFzdk52djF4anYxNVJBQUVZNXRzdmxnS0FBSGo2ZDFNREpBU0ltOEE5bi83MThTOUFBRHo5Q3lBQWFmVHRGNWYvUU53RDJQbDEvZlpidm00YUExWUE0elhnT0xpM1BBZzJmZnAzOWlRd2dBRHM5UEovV29LTjc0Und3d0NJTGFCeGo0RzZlQWNFUUFiZW53RUpBUVJnNEdPZDluTUFBWENvMzdVL0lBQ212KzkvQVFLUW9wOXYzUEx0RndBQkdPbnpqYm5hWnlBQjRqbUEzZTcvSEJ1d2NZUElVZ0N3QWhodjk5L3NCZ1NnL3ZSL2FjbzcrdzhJUUl1M1BpenMxenY3RHdoQUNwL3pPVnp2WC9hMnJjdC9RQUQyK0ZJSFcvK0FBTFIrMi9QQ1VzRGxQeUFBQmJmK1g5M3RlZmUrdjdrUENFQjJ2dlYvcGQwZW0waUFBQXh3OE4rd0JnU2d5d3JnZE5aZm93R0tBZ2pBSGsvK2ZFd0RBQVJnUjZOLytmVG5wZDRCSnlTQUFPeDAwMzloMEc5LzR0ZjBCK0p0b1B0LzBWdDg5Z3NRZ0hIOS9jOS9rLy9talQxQWJBR1I0YjRqQmlBQVF3NXJid3dGQkNDamZQVFIyWDlBQURwZTZWLzI3TC9wRDhSTjRHNW5nWXgrd0FyQXJWb0FBUmgyVFNBbmdBQzQ4SGZ5QnhBQUYvNVdBSUFBWVBvRGNRckk2QWNRZ0RUY1VQcjNmMzcrOERrZUgrNzhFR3dCZlJyVEh4Q0FqblBmOUFjRXdMVS9RTndEeU9kdEFqNmIrNEFWQUFBQ2dNdC9JTGFBeU5hdlRqcjREMWdCcE5YVFhvZTViL29EQXBDR3J3OHkvUUVCOEw0SGdMZ0hZUFFEV0FHWS9nQldBT1krZ0JXQTZROWdCV0R1QXdpQXVROGdBT1krZ0FBWStnQUNZTVFEeENrZ0FBUUFBQUVBUUFBQUJBQUFBUUJBQUFBUUFBQUVBQUFCQUVBQUFCQUFBQVFBQUFFQVFBQUFFQUFBQkFBQUFRQkFBQUFRQUFBRUFBQUJBRUFBQUJBQUFBUUFBQUVBUUFBQUJBQUFBUUJBQUFBUUFBQUVBQUFCQUVBQUFCQUFBQVFBQUFFQVFBQUFFQUFBQkFBQUFRQkFBQUFRQUFBRUFBQUJBRUFBQUJBQUFBUUFBQUVBUUFBQUVBQUFBUUJBQUFBUUFBQUVBQUFCQUVBQUFCQUFBQVFBQUFFQVFBQUFFQUFBQkFBQUFRQkFBQUFRQUFBRUFBQUJBRUFBQUJBQUFBUUFnQ1gvQjV6WDI0bDB3N1FyQUFBQUFFbEZUa1N1UW1DQyIsICJzaXplcyI6ICI1MTJ4NTEyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAiYW55In0sIHsic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBZ0FBQUFJQUNBSUFBQUI3R2tPdEFBQUxrMGxFUVZSNDJ1M2RNVzdyUmh1RzBkZUJOM0lMRjZyZGVSTmVRTzRtc3BKc3duY1BYb0U3MXk1Y3FQY2FVcVFRSUFpaVJWSzJLWEhtTzZmTFJmNzhnUUo4RDJkSURtOCtuaDhEUUQxLytRa0FCQUFBQVFCQUFBQVFBQUFFQUFBQkFFQUFBQkFBQUFRQUFBRUFRQUFBRUFBQUJBQUFBUUJBQUFBUUFBQUVBQUFCQUVBQUFCQUFBQVFBQUFFQVFBQUFCQUFBQVFCQUFBQVFBQUFFQUFBQkFFQUFBQkFBQUFRQUFBRUFRQUFBRUFBQUJBQUFBUUJBQUFBUUFBQUVBQUFCQUVBQUFCQUFBQVFBQUFFQVFBQUFCQUFBQVFCQUFBQVFBQUFFQUFBQkFFQUFBQkFBQUFRQUFBRUFRQUFBRUFBQUJBQUFBUUJBQUFBUUFBQUVBQUFCQUVBQUFCQUFBQVFBQUFFQVFBQUFFQUFBQVFCQUFBQVFBQUFFQUFBQkFFQUFBQkFBQUFRQUFBRUFRQUFBRUFBQUJBQUFBUUJBQUFBUUFBQUVBQUFCQUVBQUFCQUFBQVFBQUFFQVFBQUFFQUFBQVFCQUFBQVFBQUFFQUFBQkFFQUFBQkFBQUFRQUFBRUFRQUFBRUFBQUJBQUFBUUJBQUFBUUFBQUVBQUFCQUVBQUFCQUFBQVFBZ0JsdS9RVEFaZno2L1RiNTkyeWZObjRvQVFCNkcrNElBR0RRSXdDQUtZOEFBR1k5QWdDWTlRZ0FZTndqQUUxN2VYMGYvdUhEL1oxZkJ1TWVBUURPRy9mYnA0Mmhqd0JBeFd0ODB4OEJBQnM3SUFCZzRvTUFnTGtQQWdCR1B3Z0FHUG9nQUdEdWd3Q0F1WThBQU9ZK0FnQVkrc1EzZ1lFNW85LzBqMjg5V2dHQXEzNFFBREQwZTd1S0Y3ellBZ0xUSDZ3QXdOd0hBUUJ6SDJJTENFeC9FQUJvY2U2Yi9vb29BR0Q2SXg0Q0FGN21JbDRFRXdBdytnMXhCQUJzVFVBOEJnb056WDN2dFZwQUNBQVV2ZVEzL1ExM0FRQWJQaGowQWdCR1A2YThBSURwYjlZakFHRDZtL1VJQUpqK3hqMENBSjd5WE0rM1U0eDdCQURXY3A3UEJmN2ZEWDBFQUtycytaajRDQUFVbXY2R1BnSUFWVWEvaVk4QVFLM3BiKzRqQUZCcitwdjdDQUQwTnYxSEhnTTE5SW52QWNEM1IzOWJ3M1Q3dERIOXNRS0FWcC8wLzhJYlhvWStBZ0MxTnYzTmZXSUxDS3BOZjZNZkFZQTJwdjlaODNyLzczRHFmMlg2SXdEUXpMWC83dVE0OTNnUkFJaDlsWE1udnRGUGkyNCtuaC85Q2t0N2VYMGYvdUhEL1oxZnB2V3RmME1mS3dEb1ovclBuK21tUC9FWUtGUzc5amY2c1FJQTJ6NGdBTkRMdTc0alQzbTYwNHNBUUpVTDdjTi9CNk1mQVlCYW16Lzdweno5UjBFQW9NUW4zVFBqalY4UUFPajUyaDhFQURvWnV6UC8rYVkvQWdDWHZ2eS93QXBnY3JpYi9nZ0FkTGo1TS9rZE1kTWZBWUJ5MzVMMG1EOENBRzFmL3M4WjRzTUdHUDBJQURTLytiTTczSDl5b0I4MndQUkhBS0NUcmYvSmpmNnovallRQUdqc0kxK1R3OTNvUndDZ2srbC9OTkRIRzJENmd3Q1FidDc1R243YWQrU0JINzgvQ0FCdFgvNFBKLzVrQTB4L0VBQjZPTzd0MU1UM3dBOElBQ1Z5NG9FZkVBQnNLS1d0RDB5Q0FHQllaK2tieUM3L1FRRG80ZDd2ek5kOWJmMkRBTkR0MmRIekd3QUlBRjF0L293M3dPaUhFYmQrQWxyYy9EbjhCMzc2VHpiNndRcUFRZ2Y2ZStZSEJJRCtqLzN4WVM4UUFPb2UrVG5TQU5NZkJJRE92L1Q3YVFOTWZ4QUEwc2VSbjNQMitnMTlFQUE2WEFGTXZ2UGxyRGNRQU9xKzgyVWRBQUxBNnFiMnhVNzk5TnduQ0FCRk41UmMvb01BMFAvRFA2WS9DQUNZL2lBQTlIWDVQMyttbS80Z0FIVDRsY2ZKNFc3Nmd3RFE1Nm1mTTQvN0J3U0E5TGVoUDdJVTBBYUk3d0hRMzN1L3crUCtqLzdROUFjckFLb2M5Ny9mRVRMNlFRRG8rZG4vVTBjN3VERUFBa0RkejM2Wi9pQUFyUEhCemN0LytoRVFBUG84L3NHZUR3Z0FwVS8rOGZBUHhHT2dsRDMzemVnSEt3QlM4eXcyeC8yREFHQUZBQWdBRmhtQUFPRGFIeEFBVnZHNkZpQUFsTGo4WHk0RDBnSUNRRXVyQWQvekFnR2c0dTcvN3QxZE8wZ1FMNExCV2VjSUhjWkRHRUFBcUxoOTVNMHZpQzBnT252NmMrUzYvbkQ3eU9VL0NBQjlidmpNekFBZ0FIVDE4dGZrdlYrWC94RDNBRWhyWnpQTUxNU25uM29ITHVubTQvblJyN0MwbDlmMzRSOCszTjlaTGh3V3hlNC94QllRUFMwVWpxYjVxZUZ1RVFBQ1FPY1ptQnowTHY5QkFLaDRwTFBwRHdKQWxSMGhRQUN3RkFBRWdLb05FQVlRQUt3RGdIZ1JqRFQzalA5Wkh3UHc3RDhJQVAyODNuWFdFZi9lQkFZQm9MYzNlNytRQVNEdUFkRE5NWEF1N1VFQXFIc0lxQWFBQUZEM0NHZ05BQUdnK2djQUFBR2cxdlRYQUJBQUFBU0FZcGYvRmdFZ0FBQUlBTVV1L3kwQ1FBQUFFQUFBQkFBQUFRQkFBQUFRQUFBRUFBQUJJSTE5czllM1gwQUFBQkFBeWl3Q1hQNkRBQUFnQUpSWkJMajhCd0dnWWdOTWZ4QUFLamJBOUFjQm9HSURUSDhRQUNvMndQU0hOYnYxRTNEdVFKL3pVUmVqSHdTQXRQTHhyL2tqZXp3RFJqOElBSGFFZ0xnSFFOMlBBQU1DUUFOelh3TkFBTkFEUUFCSXVhMThEUUFCb1BRNlFBWWduZ0tpKzkyZS9TTGdhT2ovK3YzbVVSK3dBcURFOWY3MmFYTTA4UzBGd0FxQS9tLzJIaTBJaGs4SFdRMkFBRkQwUWFCOUJzYTNob1k3UzRBQTRMMEJJTzRCMFBiRC9xZnVHUUJXQUJRNlF1N1RoNGlFQWF3QUtMU1kyTVhBNkFjQm9NcGhEOE5IUlRVQUJBQmRBUVNBMVl6cDVTN1B2VFVHQW9CTGRVQUFpTStFQVFLQWEzOUFBQUFRQUdML0J4QUFBQVFBQUFFZzdnQURBZ0NBQUpCVjNlWjFCeGdFZ0hTOC8rTXpBQkRmQTBCT0RxLzYzV0FBQWFEVzdWK2YvNFhZQWdKQUFJZzd3NEFBRUkvL0F3SUFRTndFSmxmWm4xbGlOV0QvQjZ3QXlQcjNmenkvRHdoQXJRWWNmYXBYQTREWUFpcDErWC80elA2dUFlNFBneFVBRmRjRWxnS0FBTWpBMXpNZ0lTQUFOUHo0LzhqZjZhWXh4RDBBS2xmazB4UGZ0azhidHhCQUFLaVNnYU1TV0J5QUFGRGkrSWZoUTBSQTNBTUFRQUJZeGVYLzdpSjlvZXQwVy84UVcwQTBzUVhrblMvQUNzRHovait6SUhBREFBU0F4bTcvV2dRQUFnQ0FBQkQ3UHlBQUFBZ0FBQUpBZlA4ZEVBQUFCSUM0QXd3SUFMSC9Bd2dBcnYwQkFhQy9BK2I4RGlBQTJQOEJCSURZQWdJRWdLc09hRE1hRUFEWDZRQUNrSEs3LzBzc0JYUUZCSUJWZi9KbCtCVXdnUGdrWkpITC8vMWY3dGNCbmc0Q3JBQjhCakwyZndBQmtBRUFBYWp4OHBlTklFQUF5Rm43UEpZT0lBQ1VPT3JIdUlkNENvaUNoLzhjM1MxdytodFlBZUMrTVNBQXBNcmhQMjRhZ3dDdzl2MGZHL2RBM0FQUWdCKzhiQmNWRUFBYU8vN0IxZzBRVzBCbHcrRGlIUkNBMUx6OSsvMUZnSVNBQU9EMkx4RDNBS2h5K3hjUUFJcmUvcldxZ05nQ3d1MWZRQUNvY2pxUWhJQUFVT0wwTndBQmNGd3pJQUNzL3B6TzVScWdMaUFBckhyengvMWVRQUFrd2VVL0lBQ0ZaNzNCRFFpQVBBQUlnUGtlK3orQUFKaitBQUtBeTM5QUFNeDZBQUZJb2YyZjRUc0VrZ0FDUUtHREg1d3FBY1QzQUZZNytwZStBK3gxWXNBS1lJM2JQaDc5QkFUQXBqK0FBSmorUC9vaGVKZi9nQUEwZHUyLzlJblFnQUN3NnAyZmIyNFc2UWNRVHdGZHhkLy8vbmZ3Vi9iOUFTc0E0bVZnUUFDcVhQNERDRUJLYlBGZmZmcTcvQWNFNERvdmR2MzV4KzBXUUFCU2E4TjlEUTF3K1E4SXdIWEdydDEvUUFBMHdPVS9zQlkzSDgrUGZvWDBlOVNQNlE5WUFWeVRPOENBQUdnQWdBQm9RT3ovQUhFV0VJdjA1dVgxM2U5QVd4N3U3L3dJVmdEWWNRSUVBTk1maUMwZ2pINUFBTkxrdHViYjBnZU9hZ0FRVzBCV0FBQUNZUG9EeEJaUWZPMEx3QXJBOUFjRUFOTWZFQUJNZjBBQVdPblEzODE5MHg4UUFOZitBUEVVa0tFUElBQkdQNEFBR1AwQUFtRHVBd2lBdVE4SUFNWTlJQUNZK0VDOEJ3Q0FBQUFnQUFBSUFBQUNBSUFBQUNBQUFBZ0FBQUlBZ0FBQUlBQUFDQUFBQWdDQUFBQWdBQUFJQUFBQ0FJQUFBQ0FBQUFnQUFBSUFJQUFBQ0FBQUFnQ0FBQUFnQUFBSUFBQUNBSUFBQUNBQUFBZ0FBQUlBZ0FBQUlBQUFDQUFBQWdDQUFBQWdBQUFJQUFBQ0FJQUFBQ0FBQUFnQUFBSUFnQUFBQ0FBQUFnQ0FBQUFnQUFBSUFBQUNBSUFBQUNBQUFBZ0FBQUlBZ0FBQUlBQUFDQUFBQWdDQUFBQWdBQUFJQUFBQ0FJQUFBQ0FBQUFnQUFBSUFnQUFBQ0FBQUFnQ0FBQUFnQUFBSUFBQUNBSUFBQUNBQUFBZ0FBQUlBZ0FBQUlBQUFDQUFBQWdDQUFBQWdBQUFJQUFBQ0FJQUFBQ0FBQUFnQUFBSUFnQUFBSUFBQUFnQ0FBQUFnQUFBSUFBQUNBSUFBQUNBQUFBZ0FBQUlBZ0FBQUlBQUFDQUFBQWdDQUFBQ3dyUDhCYkZPSkg2aW9tUlFBQUFBQVNVVk9SSzVDWUlJPSIsICJzaXplcyI6ICI1MTJ4NTEyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAibWFza2FibGUifV19">
+<style>
+  :root{
+    /* ── Superficies ── */
+    --bg:#0b0b0d;
+    --surface:#152742;          /* tarjeta navy */
+    --surface-2:#1b3153;        /* caja interior */
+    --surface-3:#101b30;        /* fondo de gráfico */
+    --hairline:rgba(255,255,255,.09);
+    --border:#263a5c;
+
+    /* ── Tinta ── */
+    --text:#eef2f7;
+    --text-muted:#94a3b8;
+
+    /* ── Acento ── */
+    --accent:#eab84f;
+    --accent-warm:#f3c96f;
+    --accent-light:rgba(234,184,79,.22);
+
+    /* ── Semántica clínica ── */
+    --green:#55c98a;   --green-bg:rgba(85,201,138,.13);
+    --red:#f2705f;     --red-bg:rgba(242,112,95,.13);
+    --yellow:#eab84f;  --yellow-bg:rgba(234,184,79,.13);
+
+    --radius:14px;
+    --radius-sm:10px;
+    --font-display:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:var(--font-body);
+    background:var(--bg);
+    color:var(--text);
+    min-height:100dvh;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+  }
+  .wrap{
+    max-width:560px;margin:0 auto;
+    padding:calc(22px + env(safe-area-inset-top)) calc(18px + env(safe-area-inset-right))
+            calc(40px + env(safe-area-inset-bottom)) calc(18px + env(safe-area-inset-left));
+  }
+  /* En la app instalada el contenido sube bajo la barra de estado: se compensa */
+  @media (display-mode:standalone){
+    .wrap{padding-top:calc(30px + env(safe-area-inset-top))}
+  }
+  body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent}
+  button,.opt,.tab{touch-action:manipulation}
+  input{font-size:16px}   /* evita el zoom automático de iOS al enfocar */
+
+  /* ══ Aviso de instalación · solo en Safari iOS fuera de la app ══ */
+  .install{
+    display:none;align-items:flex-start;gap:12px;
+    background:rgba(234,184,79,.09);border:1px solid rgba(234,184,79,.3);
+    border-radius:var(--radius-sm);padding:14px 16px;margin-bottom:20px;
+  }
+  .install.show{display:flex}
+  .install-body{flex:1;font-size:14px;color:#e3d6b8;line-height:1.5}
+  .install-body b{display:block;color:var(--accent);font-size:15px;margin-bottom:4px}
+  .install-close{
+    background:none;border:none;color:var(--text-muted);
+    font-size:22px;line-height:1;padding:0 2px;cursor:pointer;
+  }
+
+  /* ══ Cabecera ══ */
+  .brand{
+    font-family:var(--font-display);
+    font-size:14px;letter-spacing:.06em;
+    padding-bottom:12px;border-bottom:1px solid #1e2532;margin-bottom:22px;
+  }
+  .brand b{color:var(--accent);font-weight:700}
+  .brand span{color:var(--text-muted)}
+
+  .badge{
+    display:inline-block;margin-bottom:14px;padding:6px 13px;
+    font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+    color:#10151f;background:var(--accent);border-radius:999px;
+  }
+  h1.title{
+    font-family:var(--font-display);
+    font-weight:700;font-size:34px;line-height:1.12;letter-spacing:-.01em;
+    margin-bottom:16px;
+  }
+  h1.title em{color:var(--accent);font-style:normal}
+
+  .lede{font-size:16px;color:#dbe2ea;margin-bottom:14px}
+  .source{font-size:13.5px;color:var(--text-muted);line-height:1.5;margin-bottom:18px}
+  .source i{font-style:italic}
+
+  .btn-ghost{
+    font-family:var(--font-body);font-size:14px;color:var(--text-muted);
+    background:transparent;border:1px dashed #33405a;border-radius:10px;
+    padding:10px 22px;cursor:pointer;transition:.2s;
+  }
+  .btn-ghost:hover{color:var(--text);border-color:#4a5a78}
+
+  /* ══ Pestañas ══ */
+  .tabs{
+    display:flex;gap:26px;overflow-x:auto;scrollbar-width:none;
+    margin:26px 0 20px;border-top:1px solid #1e2532;border-bottom:1px solid #1e2532;
+    padding:0 2px;-webkit-overflow-scrolling:touch;
+  }
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{
+    flex:0 0 auto;background:none;border:none;cursor:pointer;
+    font-family:var(--font-body);font-size:16px;color:var(--text-muted);
+    padding:16px 0;border-bottom:2px solid transparent;transition:.2s;white-space:nowrap;
+  }
+  .tab:hover{color:#c6d0dc}
+  .tab.active{color:var(--accent);font-weight:600;border-bottom-color:var(--accent)}
+  .tab .n{font-size:11px;opacity:.6;margin-right:5px;font-variant-numeric:tabular-nums}
+
+  .panel{display:none}
+  .panel.active{display:block;animation:fadeIn .3s ease-out}
+
+  /* ══ Tarjetas ══ */
+  .card{
+    background:var(--surface);border-radius:var(--radius);
+    padding:22px 20px;margin-bottom:16px;
+  }
+  .card-title{
+    font-family:var(--font-display);font-weight:700;font-size:22px;line-height:1.2;
+    margin-bottom:8px;
+  }
+  .card-sub{font-size:14.5px;color:var(--text-muted);margin-bottom:18px}
+  .group-title{
+    font-family:var(--font-display);font-weight:700;font-size:17px;
+    margin:22px 0 10px;
+  }
+  .group-title:first-child{margin-top:0}
+
+  /* ══ Campos ══ */
+  .field{
+    background:var(--surface-2);border:1px solid var(--hairline);border-radius:var(--radius-sm);
+    padding:12px 14px;margin-bottom:10px;
+    display:flex;align-items:center;gap:12px;
+  }
+  .field-label{flex:1;font-size:15px;line-height:1.35}
+  .field-label .unit{display:block;font-size:12px;color:var(--text-muted);margin-top:2px}
+  .field-input-wrap{flex:0 0 96px}
+  .field-input{
+    width:100%;padding:9px 8px;
+    font-family:var(--font-body);font-size:16px;font-weight:600;text-align:center;
+    color:var(--text);background:#0f1c33;
+    border:1.5px solid #31456a;border-radius:8px;
+    transition:border-color .2s,box-shadow .2s;-moz-appearance:textfield;
+  }
+  .field-input::placeholder{color:#5b6b85;font-weight:400}
+  .field-input::-webkit-outer-spin-button,.field-input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+  .field-input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(234,184,79,.16)}
+  .field-input.error{border-color:var(--red);box-shadow:0 0 0 3px rgba(242,112,95,.16)}
+
+  /* ══ Casilla ══ */
+  .opt{
+    display:flex;align-items:flex-start;gap:12px;
+    background:var(--surface-2);border:1px solid var(--hairline);border-radius:var(--radius-sm);
+    padding:14px;margin-bottom:10px;cursor:pointer;
+  }
+  .opt input[type=checkbox]{width:20px;height:20px;accent-color:var(--accent);margin-top:1px;cursor:pointer;flex:0 0 auto}
+  .opt-text{font-size:15px;line-height:1.35}
+  .opt-text small{display:block;color:var(--text-muted);font-size:13px;margin-top:3px}
+
+  /* ══ Segmentado ══ */
+  .seg-label{font-size:14px;color:var(--text-muted);margin:0 0 8px}
+  .toggle-group{display:flex;border:1px solid #31456a;border-radius:var(--radius-sm);overflow:hidden;margin-bottom:12px}
+  .toggle-btn{
+    flex:1;padding:11px 6px;
+    font-family:var(--font-body);font-size:12.5px;font-weight:500;line-height:1.3;
+    color:var(--text-muted);background:#0f1c33;border:none;border-right:1px solid #31456a;
+    cursor:pointer;transition:.2s;
+  }
+  .toggle-btn:last-child{border-right:none}
+  .toggle-btn.active{background:var(--accent);color:#10151f;font-weight:700}
+
+  /* ══ Botones ══ */
+  .btn-calc{
+    width:100%;padding:16px;
+    font-family:var(--font-body);font-size:16.5px;font-weight:700;
+    color:#10151f;background:var(--accent);
+    border:none;border-radius:12px;cursor:pointer;transition:.15s;margin-bottom:10px;
+  }
+  .btn-calc:hover{background:var(--accent-warm)}
+  .btn-calc:active{transform:scale(.99)}
+  .btn-reset{
+    width:100%;padding:12px;
+    font-family:var(--font-body);font-size:14px;font-weight:500;
+    color:var(--text-muted);background:transparent;
+    border:1px solid #2c3d5c;border-radius:12px;cursor:pointer;transition:.2s;margin-bottom:18px;
+  }
+  .btn-reset:hover{color:var(--text);border-color:#44567a}
+  .btn-next{
+    width:100%;padding:15px;
+    font-family:var(--font-body);font-size:15.5px;font-weight:600;
+    color:var(--accent);background:transparent;
+    border:1.5px solid var(--accent);border-radius:12px;cursor:pointer;transition:.2s;
+  }
+  .btn-next:hover{background:rgba(234,184,79,.1)}
+
+  /* ══ Nota ámbar ══ */
+  .note{
+    background:rgba(234,184,79,.09);border:1px solid rgba(234,184,79,.3);
+    border-radius:var(--radius-sm);padding:14px 16px;margin:16px 0;
+  }
+  .note b{display:block;color:var(--accent);font-size:15px;margin-bottom:6px}
+  .note p{font-size:14px;color:#e3d6b8;line-height:1.5}
+
+  .info-line{
+    font-size:12.5px;color:var(--text-muted);line-height:1.5;
+    padding-top:14px;margin-top:16px;border-top:1px solid var(--hairline);
+  }
+
+  /* ══ Resultados ══ */
+  .results-card{border:1px solid var(--accent-light)}
+  .result-row{
+    display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+    padding:13px 0;border-bottom:1px solid var(--hairline);
+  }
+  .result-row:last-child{border-bottom:none}
+  .result-label{font-size:14.5px;color:#dbe2ea}
+  .result-value{font-family:var(--font-display);font-size:23px;font-weight:700;color:var(--accent)}
+  .result-unit{font-family:var(--font-body);font-size:12px;color:var(--text-muted);margin-left:4px}
+  .result-note{font-size:12.5px;color:var(--text-muted);margin-top:2px}
+
+  .curve-alert{
+    margin-top:12px;padding:12px 14px;border-radius:var(--radius-sm);
+    font-size:14px;font-weight:500;line-height:1.45;
+  }
+  .curve-alert.normal{background:var(--green-bg);color:var(--green);border:1px solid rgba(85,201,138,.28)}
+  .curve-alert.shifted-right{background:var(--red-bg);color:var(--red);border:1px solid rgba(242,112,95,.28)}
+  .curve-alert.shifted-left{background:var(--yellow-bg);color:var(--yellow);border:1px solid rgba(234,184,79,.28)}
+
+  /* ══ Tabla V/Q ══ */
+  .vq-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -4px}
+  .vq-table{width:100%;border-collapse:collapse;font-size:12px}
+  .vq-table th{font-size:11px;font-weight:500;color:var(--text-muted);padding:4px 2px;text-align:center}
+  .vq-table td{padding:3px 2px;text-align:center;vertical-align:middle}
+  .vq-row-label{text-align:left!important;font-size:12px;font-weight:600;color:var(--accent);white-space:nowrap;padding-right:8px!important}
+  .vq-input{width:54px!important;padding:7px 2px!important;font-size:14px!important}
+  .vq-result-row td{font-family:var(--font-display);font-size:15px;font-weight:700;padding:8px 2px;color:var(--text-muted)}
+
+  /* ══ Histograma ══ */
+  .hist-section-label{font-size:14px;color:#dbe2ea;margin-bottom:10px;line-height:1.4}
+  .hist-row{display:flex;gap:6px;align-items:flex-end;margin-bottom:4px}
+  .hist-band{flex:1;text-align:center}
+  .hist-band-label{font-size:10px;font-weight:500;color:var(--text-muted);margin-bottom:4px}
+  .hist-input{width:100%!important;padding:8px 2px!important;font-size:15px!important}
+  .hist-total{flex:0 0 42px;font-size:14px;font-weight:700;color:var(--accent);text-align:center;padding-bottom:9px}
+  .hist-ro{
+    font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--text-muted);
+    text-align:center;padding:8px 2px;background:#0f1c33;border:1px solid #26364f;border-radius:8px;
+  }
+
+  .csv-upload-area{
+    border:2px dashed #33455f;border-radius:var(--radius-sm);
+    padding:22px 14px;text-align:center;cursor:pointer;transition:.2s;
+  }
+  .csv-upload-area:hover{border-color:var(--accent);background:rgba(234,184,79,.05)}
+
+  .hist-chart-wrap{
+    margin-top:14px;background:var(--surface-3);border:1px solid var(--hairline);
+    border-radius:var(--radius-sm);padding:12px 6px 8px;
+  }
+  .hist-chart-title{
+    text-align:center;font-family:var(--font-display);font-size:14px;font-weight:700;
+    color:#dbe2ea;margin-bottom:8px;
+  }
+
+  /* ══ Aviso clínico ══ */
+  .disclaimer{
+    background:var(--surface);border-left:4px solid var(--accent);
+    border-radius:0 var(--radius) var(--radius) 0;padding:22px 20px;margin:26px 0 0;
+  }
+  .disclaimer h3{font-family:var(--font-display);font-size:21px;font-weight:700;margin-bottom:4px}
+  .disclaimer .kicker{
+    font-family:var(--font-display);color:var(--accent);
+    font-size:14px;letter-spacing:.13em;margin-bottom:14px;
+  }
+  .disclaimer p{font-size:14.5px;color:var(--text-muted);line-height:1.6}
+
+  footer{
+    margin-top:26px;padding-top:20px;border-top:1px solid #1e2532;
+    font-size:14px;color:var(--text-muted);line-height:1.6;
+  }
+  footer b{color:#dbe2ea;font-weight:600}
+  footer p{margin-bottom:14px}
+  footer p:last-child{margin-bottom:0}
+
+  .hidden{display:none!important}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+  .animate-in{animation:fadeIn .35s ease-out forwards}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <div class="install" id="installTip">
+    <div class="install-body">
+      <b>Instalar en la pantalla de inicio</b>
+      Toque Compartir en la barra de Safari y elija <b style="display:inline">Añadir a pantalla de inicio</b>. La herramienta se abre a pantalla completa y funciona sin conexión.
+    </div>
+    <button class="install-close" onclick="document.getElementById('installTip').classList.remove('show')" aria-label="Cerrar aviso">&times;</button>
+  </div>
+
+  <div class="brand"><b>NEOPEDS</b> <span>/ Academy</span></div>
+
+  <div class="badge">Edición esencial · 4 módulos</div>
+  <h1 class="title">Marcadores de <em>hipoxemia</em></h1>
+
+  <p class="lede">Cálculo a pie de cuna para la falla respiratoria neonatal. Cuatro módulos en secuencia: de la gasometría de ingreso al intercambio gaseoso después del ajuste de PEEP. Edición sin histogramas de oximetría.</p>
+
+  <p class="source">Adaptado del CDSS de hipoxemia de Dr. Yasser Elsayed y Dr. Muzafar Gani. Fuentes de cálculo: Roe &amp; Jones 1993; Sapsford &amp; Jones 1995; Smith &amp; Jones 2001; Rowe 2010; Elsayed &amp; Fraser 2016; Hopkins 2020 (Ec. 21, Berggren). Constantes: PB 760 mmHg · PH<sub>2</sub>O 47 mmHg · R 0.8.</p>
+
+  <button class="btn-ghost" onclick="resetAll()">Reiniciar</button>
+
+  <!-- ══════════ Pestañas ══════════ -->
+  <nav class="tabs" id="tabs" role="tablist">
+    <button class="tab active" data-panel="p1"><span class="n">1</span>Marcadores</button>
+    <button class="tab" data-panel="p2"><span class="n">2</span>V/Q y shunt</button>
+    <button class="tab" data-panel="p3"><span class="n">3</span>Ventilación</button>
+    <button class="tab" data-panel="p4"><span class="n">4</span>V/Q post</button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- MÓDULO 1 · MARCADORES BÁSICOS DE HIPOXEMIA              -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="panel active" id="p1" role="tabpanel">
+
+    <div class="card">
+      <div class="card-title">Marcadores básicos de hipoxemia</div>
+      <div class="card-sub">Gradiente A-a, OI, OSI y SpO₂:FiO₂ a partir de una gasometría y los parámetros del ventilador.</div>
+
+      <div class="group-title">Tipo de muestra</div>
+      <label class="opt" for="chkArterial">
+        <input type="checkbox" id="chkArterial" checked>
+        <span class="opt-text">Muestra arterial disponible
+          <small>Sin ella no se calculan gradiente A-a, OI ni PaO₂:FiO₂</small>
+        </span>
+      </label>
+
+      <div class="seg-label">Curva de disociación de la hemoglobina</div>
+      <div class="toggle-group" id="curveToggle">
+        <button class="toggle-btn active" data-val="normal" onclick="setCurve(this)">No transfundido<br>pH &gt; 7.3</button>
+        <button class="toggle-btn" data-val="right" onclick="setCurve(this)">Transfundido<br>ó pH &lt; 7.3</button>
+        <button class="toggle-btn" data-val="severe" onclick="setCurve(this)">Transfundido<br>y pH &lt; 7.3</button>
+      </div>
+
+      <div class="group-title">Parámetros ventilatorios</div>
+      <div class="field">
+        <div class="field-label">FiO₂ <span class="unit">0.21 – 1.00</span></div>
+        <div class="field-input-wrap"><input type="number" class="field-input" id="inFiO2" step="0.01" min="0.21" max="1.00" placeholder="0.21" inputmode="decimal"></div>
+      </div>
+      <div class="field">
+        <div class="field-label">MAP <span class="unit">cmH₂O · 1 – 35</span></div>
+        <div class="field-input-wrap"><input type="number" class="field-input" id="inMAP" step="0.1" min="1" max="35" placeholder="—" inputmode="decimal"></div>
+      </div>
+
+      <div class="group-title">Gasometría</div>
+      <div class="field">
+        <div class="field-label">PaCO₂ <span class="unit">mmHg · 0 – 200</span></div>
+        <div class="field-input-wrap"><input type="number" class="field-input" id="inPaCO2" step="0.1" min="0" max="200" placeholder="—" inputmode="decimal"></div>
+      </div>
+      <div class="field">
+        <div class="field-label">SpO₂ <span class="unit">% · 50 – 100</span></div>
+        <div class="field-input-wrap"><input type="number" class="field-input" id="inSpO2" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></div>
+      </div>
+      <div class="field">
+        <div class="field-label">pH <span class="unit">6.6 – 7.9</span></div>
+        <div class="field-input-wrap"><input type="number" class="field-input" id="inPH" step="0.01" min="6.6" max="7.9" placeholder="—" inputmode="decimal"></div>
+      </div>
+
+      <div id="arterialFields">
+        <div class="field">
+          <div class="field-label">SaO₂ <span class="unit">% · 20 – 100</span></div>
+          <div class="field-input-wrap"><input type="number" class="field-input" id="inSaO2" step="1" min="20" max="100" placeholder="—" inputmode="numeric"></div>
+        </div>
+        <div class="field">
+          <div class="field-label">PaO₂ <span class="unit">mmHg · 0 – 750</span></div>
+          <div class="field-input-wrap"><input type="number" class="field-input" id="inPaO2" step="0.1" min="0" max="750" placeholder="—" inputmode="decimal"></div>
+        </div>
+      </div>
+
+      <div class="info-line">PB fija 760 mmHg · PH₂O 47 mmHg · Cociente respiratorio 0.8. Umbrales de severidad según Elsayed.</div>
+    </div>
+
+    <button class="btn-calc" onclick="calcular()">Calcular marcadores</button>
+    <button class="btn-reset" onclick="resetForm()">Limpiar módulo 1</button>
+
+    <div class="card results-card hidden" id="resultsCard">
+      <div class="card-title">Resultados</div>
+      <div class="card-sub">La curva de disociación se compara contra HbF (P₅₀ 19) y HbA (P₅₀ 26.6).</div>
+      <div id="resultsBody"></div>
+    </div>
+
+    <div class="note">
+      <b>Sobre la muestra capilar</b>
+      <p>Sin PaO₂ arterial el módulo entrega solo OSI y SpO₂:FiO₂. No sustituya la PaO₂ por una estimación: el gradiente A-a y el OI quedan sin calcular y así se muestran.</p>
+    </div>
+
+    <button class="btn-next" onclick="goTab('p2')">Continuar a V/Q y shunt →</button>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- MÓDULO 2 · HISTOGRAMA PRE-INTERVENCIÓN                  -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- MÓDULO 3 · V/Q Y SHUNT BASAL                            -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="panel" id="p2" role="tabpanel">
+
+    <div class="card">
+      <div class="card-title">Relación V/Q y shunt D-I</div>
+      <div class="card-sub">Basal. Introduzca al menos tres pares FiO₂ / SpO₂ obtenidos a distintas FiO₂.</div>
+
+      <div class="seg-label">Hemoglobina</div>
+      <div class="toggle-group" id="hbToggle">
+        <button class="toggle-btn" data-val="15" onclick="setHb(this)">15 g/dl</button>
+        <button class="toggle-btn active" data-val="12.5" onclick="setHb(this)">12.5 g/dl</button>
+        <button class="toggle-btn" data-val="10" onclick="setHb(this)">10 g/dl</button>
+      </div>
+
+      <div class="hist-section-label">Pares FiO₂ / SpO₂ · mínimo 3</div>
+      <div class="vq-scroll">
+        <table class="vq-table" id="vqTable">
+          <thead>
+            <tr><th style="text-align:left;min-width:64px;"></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="vq-row-label">FiO₂</td>
+              <td><input type="number" class="field-input vq-input" id="vq_f1" step="0.01" min="0.21" max="1" placeholder="0.21" inputmode="decimal"></td>
+              <td><input type="number" class="field-input vq-input" id="vq_f2" step="0.01" min="0.21" max="1" placeholder="—" inputmode="decimal"></td>
+              <td><input type="number" class="field-input vq-input" id="vq_f3" step="0.01" min="0.21" max="1" placeholder="—" inputmode="decimal"></td>
+              <td><input type="number" class="field-input vq-input" id="vq_f4" step="0.01" min="0.21" max="1" placeholder="—" inputmode="decimal"></td>
+              <td><input type="number" class="field-input vq-input" id="vq_f5" step="0.01" min="0.21" max="1" placeholder="—" inputmode="decimal"></td>
+              <td><input type="number" class="field-input vq-input" id="vq_f6" step="0.01" min="0.21" max="1" placeholder="—" inputmode="decimal"></td>
+              <td><input type="number" class="field-input vq-input" id="vq_f7" step="0.01" min="0.21" max="1" placeholder="—" inputmode="decimal"></td>
+              <td><input type="number" class="field-input vq-input" id="vq_f8" step="0.01" min="0.21" max="1" placeholder="—" inputmode="decimal"></td>
+            </tr>
+            <tr>
+              <td class="vq-row-label">SpO₂</td>
+              <td><input type="number" class="field-input vq-input" id="vq_s1" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></td>
+              <td><input type="number" class="field-input vq-input" id="vq_s2" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></td>
+              <td><input type="number" class="field-input vq-input" id="vq_s3" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></td>
+              <td><input type="number" class="field-input vq-input" id="vq_s4" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></td>
+              <td><input type="number" class="field-input vq-input" id="vq_s5" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></td>
+              <td><input type="number" class="field-input vq-input" id="vq_s6" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></td>
+              <td><input type="number" class="field-input vq-input" id="vq_s7" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></td>
+              <td><input type="number" class="field-input vq-input" id="vq_s8" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></td>
+            </tr>
+            <tr id="vqValueRow" class="vq-result-row hidden">
+              <td class="vq-row-label">V/Q</td>
+              <td id="vqv1">—</td><td id="vqv2">—</td><td id="vqv3">—</td><td id="vqv4">—</td>
+              <td id="vqv5">—</td><td id="vqv6">—</td><td id="vqv7">—</td><td id="vqv8">—</td>
+            </tr>
+            <tr id="rlValueRow" class="vq-result-row hidden">
+              <td class="vq-row-label">Shunt%</td>
+              <td id="rlv1">—</td><td id="rlv2">—</td><td id="rlv3">—</td><td id="rlv4">—</td>
+              <td id="rlv5">—</td><td id="rlv6">—</td><td id="rlv7">—</td><td id="rlv8">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-line">Berggren (Hopkins 2020, Ec. 21) · Smith &amp; Jones 2001 · Roe &amp; Jones 1993. Supuestos fijos del modelo: SvO₂ 75 %, PACO₂ 40 mmHg, P₅₀ 26.6, coeficiente de Hill 2.7. La Hb seleccionada no entra en esta ecuación basada en saturación: queda registrada como contexto.</div>
+    </div>
+
+    <button class="btn-calc" onclick="calcVQ()">Calcular V/Q y shunt</button>
+    <button class="btn-reset" onclick="resetVQ()">Limpiar módulo 3</button>
+
+    <div class="card results-card hidden" id="vqResultsCard">
+      <div class="card-title">Resultados V/Q y shunt</div>
+      <div id="vqResultsBody"></div>
+    </div>
+
+    <button class="btn-next" onclick="goTab('p3')">Continuar a volumen y ventilación →</button>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- MÓDULO 4 · PRESIÓN, VOLUMEN Y VENTILACIÓN MINUTO        -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="panel" id="p3" role="tabpanel">
+
+    <div class="card">
+      <div class="card-title">Volumen y ventilación minuto</div>
+      <div class="card-sub">Volumen tidal estimado desde la ecuación de ventilación alveolar, con el contexto de intercambio del módulo 3.</div>
+
+      <div class="note" style="margin-top:0;">
+        <b>Datos tomados del módulo 3</b>
+        <p style="display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;margin-top:8px;">
+          <span>V/Q ratio · <b style="display:inline;color:var(--accent);font-family:var(--font-display)" id="m4_vq">—</b></span>
+          <span>SpO₂ · <b style="display:inline;color:var(--accent);font-family:var(--font-display)" id="m4_spo2">—</b></span>
+          <span>Shunt D-I · <b style="display:inline;color:var(--accent);font-family:var(--font-display)" id="m4_rl">—</b></span>
+          <span>FiO₂ · <b style="display:inline;color:var(--accent);font-family:var(--font-display)" id="m4_fio2">—</b></span>
+        </p>
+      </div>
+
+      <div class="field">
+        <div class="field-label">PEEP basal <span class="unit">cmH₂O · 4 – 35</span></div>
+        <div class="field-input-wrap"><input type="number" class="field-input" id="inPEEP" step="1" min="4" max="35" placeholder="—" inputmode="numeric"></div>
+      </div>
+      <div class="field">
+        <div class="field-label">FR media observada <span class="unit">rpm · 10 – 200</span></div>
+        <div class="field-input-wrap"><input type="number" class="field-input" id="inMeanRR" step="1" min="10" max="200" placeholder="—" inputmode="numeric"></div>
+      </div>
+      <div class="field">
+        <div class="field-label">PaCO₂ <span class="unit">mmHg · se copia del módulo 1</span></div>
+        <div class="field-input-wrap"><input type="number" class="field-input" id="inPaCO2_m4" step="0.1" min="10" max="120" placeholder="—" inputmode="decimal"></div>
+      </div>
+      <div class="field">
+        <div class="field-label">Peso <span class="unit">kg · 0.3 – 10</span></div>
+        <div class="field-input-wrap"><input type="number" class="field-input" id="inWeight" step="0.01" min="0.3" max="10" placeholder="—" inputmode="decimal"></div>
+      </div>
+
+      <div class="seg-label" style="margin-top:14px;">Quejido o retracción</div>
+      <div class="toggle-group" id="gruntToggle">
+        <button class="toggle-btn" data-val="yes" onclick="setGrunt(this)">Sí</button>
+        <button class="toggle-btn active" data-val="no" onclick="setGrunt(this)">No</button>
+      </div>
+
+      <div class="info-line">VCO₂ 6 ml/kg/min · VD/VT 0.32 · Vt = (VCO₂ × 863) / (PaCO₂ × FR × (1 − VD/VT)). Ambas constantes son fijas del modelo, no ajustadas al paciente.</div>
+    </div>
+
+    <button class="btn-calc" onclick="calcM4()">Calcular Vt y ventilación minuto</button>
+    <button class="btn-reset" onclick="resetM4()">Limpiar módulo 4</button>
+
+    <div class="card results-card hidden" id="m4ResultsCard">
+      <div class="card-title">Volumen y ventilación</div>
+      <div id="m4ResultsBody"></div>
+    </div>
+
+    <button class="btn-next" onclick="goTab('p4')">Continuar a V/Q post-intervención →</button>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- MÓDULO 5 · V/Q POST-INTERVENCIÓN                        -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <section class="panel" id="p4" role="tabpanel">
+
+    <div class="card">
+      <div class="card-title">V/Q y shunt post-intervención</div>
+      <div class="card-sub">Después del ajuste de PEEP. Se compara automáticamente contra el resultado basal del módulo 3.</div>
+
+      <div class="seg-label">Hemoglobina</div>
+      <div class="toggle-group" id="hbTogglePost">
+        <button class="toggle-btn" data-val="15" onclick="setHbPost(this)">15 g/dl</button>
+        <button class="toggle-btn active" data-val="12.5" onclick="setHbPost(this)">12.5 g/dl</button>
+        <button class="toggle-btn" data-val="10" onclick="setHbPost(this)">10 g/dl</button>
+      </div>
+
+      <div class="hist-section-label">Pares FiO₂ / SpO₂ post-intervención · mínimo 3</div>
+      <div class="vq-scroll">
+        <table class="vq-table" id="vqTablePost">
+          <thead>
+            <tr><th style="text-align:left;min-width:64px;"></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="vq-row-label">FiO₂</td>
+              <td><input type="number" class="field-input vq-input" id="vqp_f1" step="0.01" min="0.21" max="1" placeholder="—" inputmode="decimal"></td>
+              <td><input type="number" class="field-input vq-input" id="vqp_f2" step="0.01" min="0.21" max="1" placeholder="—" inputmode="decimal"></td>
+              <td><input type="number" class="field-input vq-input" id="vqp_f3" step="0.01" min="0.21" max="1" placeholder="—" inputmode="decimal"></td>
+              <td><input type="number" class="field-input vq-input" id="vqp_f4" step="0.01" min="0.21" max="1" placeholder="—" inputmode="decimal"></td>
+              <td><input type="number" class="field-input vq-input" id="vqp_f5" step="0.01" min="0.21" max="1" placeholder="—" inputmode="decimal"></td>
+              <td><input type="number" class="field-input vq-input" id="vqp_f6" step="0.01" min="0.21" max="1" placeholder="—" inputmode="decimal"></td>
+              <td><input type="number" class="field-input vq-input" id="vqp_f7" step="0.01" min="0.21" max="1" placeholder="—" inputmode="decimal"></td>
+              <td><input type="number" class="field-input vq-input" id="vqp_f8" step="0.01" min="0.21" max="1" placeholder="—" inputmode="decimal"></td>
+            </tr>
+            <tr>
+              <td class="vq-row-label">SpO₂</td>
+              <td><input type="number" class="field-input vq-input" id="vqp_s1" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></td>
+              <td><input type="number" class="field-input vq-input" id="vqp_s2" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></td>
+              <td><input type="number" class="field-input vq-input" id="vqp_s3" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></td>
+              <td><input type="number" class="field-input vq-input" id="vqp_s4" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></td>
+              <td><input type="number" class="field-input vq-input" id="vqp_s5" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></td>
+              <td><input type="number" class="field-input vq-input" id="vqp_s6" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></td>
+              <td><input type="number" class="field-input vq-input" id="vqp_s7" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></td>
+              <td><input type="number" class="field-input vq-input" id="vqp_s8" step="1" min="50" max="100" placeholder="—" inputmode="numeric"></td>
+            </tr>
+            <tr id="vqpValueRow" class="vq-result-row hidden">
+              <td class="vq-row-label">V/Q</td>
+              <td id="vqpv1">—</td><td id="vqpv2">—</td><td id="vqpv3">—</td><td id="vqpv4">—</td>
+              <td id="vqpv5">—</td><td id="vqpv6">—</td><td id="vqpv7">—</td><td id="vqpv8">—</td>
+            </tr>
+            <tr id="rlpValueRow" class="vq-result-row hidden">
+              <td class="vq-row-label">Shunt%</td>
+              <td id="rlpv1">—</td><td id="rlpv2">—</td><td id="rlpv3">—</td><td id="rlpv4">—</td>
+              <td id="rlpv5">—</td><td id="rlpv6">—</td><td id="rlpv7">—</td><td id="rlpv8">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-line">Berggren (Hopkins 2020, Ec. 21) · Smith &amp; Jones 2001 · post ajuste de PEEP. Mismos supuestos fijos que el módulo 3.</div>
+    </div>
+
+    <button class="btn-calc" onclick="calcVQPost()">Calcular V/Q post</button>
+    <button class="btn-reset" onclick="resetVQPost()">Limpiar módulo 5</button>
+
+    <div class="card results-card hidden" id="vqpResultsCard">
+      <div class="card-title">Resultados post-intervención</div>
+      <div id="vqpResultsBody"></div>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- MÓDULO 6 · HISTOGRAMA POST-PEEP                         -->
+    <!-- ══════════ Aviso clínico ══════════ -->
+  <div class="disclaimer">
+    <h3>Marcadores de hipoxemia · esencial</h3>
+    <div class="kicker">AVISO CLÍNICO</div>
+    <p>Esta herramienta realiza cálculos a partir de los datos que usted introduce y está concebida únicamente como ayuda a la decisión clínica. No sustituye el juicio clínico, la evaluación integral del paciente ni la consulta con especialistas cualificados en neonatología o neumología pediátrica. Varios parámetros del modelo son supuestos fijos —SvO₂ 75 %, PACO₂ 40 mmHg, VCO₂ 6 ml/kg/min, VD/VT 0.32, PB 760 mmHg— y no se miden en el paciente; interprete los resultados con esa limitación presente. El autor y los desarrolladores no asumen responsabilidad alguna por las decisiones clínicas tomadas con esta herramienta. Todas las decisiones deben basarse en la evaluación individual del paciente y en los protocolos vigentes de la institución.</p>
+  </div>
+
+  <footer>
+    <p><b>Dr. Jano Jaramillo — Médico Pediatra y Neonatólogo · Posgrado en Trastornos del Aprendizaje.</b></p>
+    <p>Herramienta para el soporte a la decisión clínica. No sustituye la interpretación clínica del facultativo.</p>
+    <p>Fuentes: Roe &amp; Jones 1993; Sapsford &amp; Jones 1995; Smith &amp; Jones 2001; Rowe 2010; Elsayed &amp; Fraser 2016; Hopkins 2020 (Ec. 21, Berggren).</p>
+  </footer>
+
+</div>
+
+<script>
+
+
+  // ── Constants ──
+  const PB = 760;
+  const PH2O = 47;
+  const RQ = 0.8; // Cociente respiratorio
+
+  // ── State ──
+  let curveType = 'normal'; // normal | right | left
+  let isArterial = true;
+
+  // ── Curve Toggle ──
+  function setCurve(btn) {
+    document.querySelectorAll('#curveToggle .toggle-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    curveType = btn.dataset.val;
+  }
+
+  // ── Arterial checkbox ──
+  document.getElementById('chkArterial').addEventListener('change', function() {
+    isArterial = this.checked;
+    document.getElementById('arterialFields').classList.toggle('hidden', !isArterial);
+  });
+
+  // ── Validation ──
+  function getVal(id) {
+    const el = document.getElementById(id);
+    const v = parseFloat(el.value);
+    el.classList.remove('error');
+    if (isNaN(v)) return null;
+    const min = parseFloat(el.min);
+    const max = parseFloat(el.max);
+    if (v < min || v > max) {
+      el.classList.add('error');
+      return null;
+    }
+    return v;
+  }
+
+  // ── Main Calculation ──
+  function calcular() {
+    // Required fields
+    const fio2 = getVal('inFiO2');
+    const map = getVal('inMAP');
+    const paco2 = getVal('inPaCO2');
+    const spo2 = getVal('inSpO2');
+    const ph = getVal('inPH');
+
+    if (fio2 === null || map === null || paco2 === null || spo2 === null) return;
+
+    let pao2 = null, sao2 = null;
+    if (isArterial) {
+      pao2 = getVal('inPaO2');
+      sao2 = getVal('inSaO2');
+      if (pao2 === null) return;
+    }
+
+    // ── Calculations ──
+    const PiO2 = fio2 * (PB - PH2O);                          // mmHg
+    const PAO2 = PiO2 - (paco2 / RQ);                          // Alveolar gas equation
+    const AaGradient = isArterial ? (PAO2 - pao2) : null;      // A-a gradient
+    const OI = isArterial ? ((map * fio2 * 100) / pao2) : null; // Oxygenation Index
+    const OSI = (map * fio2 * 100) / spo2;                      // Oxygenation Saturation Index
+    const SFratio = spo2 / fio2;                                // SpO2:FiO2
+
+    // PaO2:FiO2 (Horowitz) — solo con muestra arterial
+    const PFratio = isArterial ? (pao2 / fio2) : null;
+
+    // ── Build results HTML ──
+    let html = '';
+
+    html += resultRow('PiO₂', PiO2.toFixed(0), 'mmHg', null);
+    html += resultRow('PAO₂', PAO2.toFixed(0), 'mmHg', null);
+
+    if (AaGradient !== null) {
+      html += resultRow('Gradiente A-a', AaGradient.toFixed(0), 'mmHg', severityAaGrad(AaGradient));
+    }
+
+    if (OI !== null) {
+      html += resultRow('Índice de Oxigenación (OI)', OI.toFixed(1), '', severityOI(OI));
+    }
+
+    html += resultRow('Índice de Sat. Oxigenación (OSI)', OSI.toFixed(1), '', severityOSI(OSI));
+    html += resultRow('SpO₂ : FiO₂', SFratio.toFixed(0), '', severitySF(SFratio));
+
+    if (PFratio !== null) {
+      html += resultRow('PaO₂ : FiO₂ (Horowitz)', PFratio.toFixed(0), '', null);
+    }
+
+    // ── Curva de disociación ──
+    html += buildCurveAlert(curveType, ph, sao2, pao2, spo2);
+
+    // ── Show ──
+    const card = document.getElementById('resultsCard');
+    const body = document.getElementById('resultsBody');
+    body.innerHTML = html;
+    card.classList.remove('hidden');
+    card.classList.remove('animate-in');
+    void card.offsetWidth; // reflow
+    card.classList.add('animate-in');
+    card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Auto-populate Module 4 PaCO2 from gasometry
+    const paco2Val = document.getElementById('inPaCO2').value;
+    if (paco2Val) {
+      document.getElementById('inPaCO2_m4').value = paco2Val;
+    }
+  }
+
+  // ── Severity Classification (Dr. Yasser Elsayed) ──
+  // Returns { level: 'target'|'moderate'|'severe', label: string }
+  function severityAaGrad(v) {
+    if (v < 20) return { level: 'target', label: 'Target' };
+    if (v <= 100) return { level: 'moderate', label: 'Moderado' };
+    return { level: 'severe', label: 'Severo' };
+  }
+  function severityOI(v) {
+    if (v < 5) return { level: 'target', label: 'Target' };
+    if (v >= 5 && v < 10) return { level: 'target', label: 'Target' };
+    if (v <= 15) return { level: 'moderate', label: 'Moderado' };
+    return { level: 'severe', label: 'Severo' };
+  }
+  function severityOSI(v) {
+    if (v < 2.5) return { level: 'target', label: 'Target' };
+    if (v >= 2.5 && v < 5) return { level: 'target', label: 'Target' };
+    if (v <= 7.5) return { level: 'moderate', label: 'Moderado' };
+    return { level: 'severe', label: 'Severo' };
+  }
+  function severitySF(v) {
+    if (v > 350) return { level: 'target', label: 'Target' };
+    if (v >= 180) return { level: 'moderate', label: 'Moderado' };
+    return { level: 'severe', label: 'Severo' };
+  }
+
+  function resultRow(label, value, unit, severity) {
+    let badge = '';
+    if (severity) {
+      const colors = {
+        target:   { bg: 'var(--green-bg)',  text: 'var(--green)',  border: 'rgba(74,124,89,0.3)' },
+        moderate: { bg: 'var(--yellow-bg)', text: 'var(--yellow)', border: 'rgba(158,124,26,0.3)' },
+        severe:   { bg: 'var(--red-bg)',    text: 'var(--red)',    border: 'rgba(185,74,62,0.3)' }
+      };
+      const c = colors[severity.level];
+      badge = `<span style="display:inline-block;font-family:var(--font-body);font-size:9px;font-weight:600;padding:2px 7px;border-radius:10px;background:${c.bg};color:${c.text};border:1px solid ${c.border};margin-left:6px;vertical-align:middle;">${severity.label}</span>`;
+    }
+    return `<div class="result-row">
+      <span class="result-label">${label}</span>
+      <span><span class="result-value">${value}</span><span class="result-unit">${unit}</span>${badge}</span>
+    </div>`;
+  }
+
+  function buildCurveAlert(curve, ph, sao2, pao2, spo2) {
+    // Hill equation parameters
+    let p50;
+    if (curve === 'normal') p50 = 19;       // HbF
+    else if (curve === 'right') p50 = 23;   // Mezcla
+    else p50 = 26.6;                        // HbA
+
+    const satObs = sao2 !== null ? sao2 : spo2;
+    const satSource = sao2 !== null ? 'SaO₂' : 'SpO₂';
+
+    // Sin PaO₂ → solo texto
+    if (pao2 === null) {
+      let fb;
+      if (curve === 'normal') fb = 'Se asume posición normal (HbF predominante)';
+      else if (curve === 'right') fb = 'Se espera desplazamiento a la derecha';
+      else fb = 'Se espera desplazamiento severo a la derecha';
+      return `<div class="curve-alert normal">Curva de disociación de OxiHb: ${fb}</div>`;
+    }
+
+    const nH = 2.7;
+    const r = Math.pow(pao2 / p50, nH);
+    const satExp = (r / (1 + r)) * 100;
+    const delta = satExp - satObs;
+
+    let alertClass, text;
+    if (delta <= 2) {
+      alertClass = 'normal';
+      text = 'posición normal (HbF predominante, ligeramente a la izquierda)';
+    } else if (delta <= 5) {
+      alertClass = 'shifted-right';
+      text = 'desplazada a la derecha';
+    } else {
+      alertClass = 'shifted-right';
+      text = 'severamente desplazada a la derecha';
+    }
+
+    const detail = `<div style="margin-top:6px;font-size:11px;opacity:0.85;">${satSource} esperada ≈ ${satExp.toFixed(0)}% · observada = ${satObs}% · Δ = ${delta.toFixed(1)}%</div>`;
+    const svg = buildODCSvg(p50, pao2, satObs, satExp, delta);
+
+    return `<div class="curve-alert ${alertClass}">Curva de disociación de OxiHb: ${text}${detail}</div>${svg}`;
+  }
+
+  // ── SVG Oxygen-Hemoglobin Dissociation Curve ──
+  function buildODCSvg(p50Sel, pao2, satObs, satExp, delta) {
+    const W = 340, H = 270;
+    const pad = {top: 22, right: 16, bottom: 42, left: 46};
+    const pW = W - pad.left - pad.right;
+    const pH_ = H - pad.top - pad.bottom;
+    const xMax = 120, yMax = 100;
+    const sx = v => pad.left + (v / xMax) * pW;
+    const sy = v => pad.top + pH_ - (v / yMax) * pH_;
+    const nH = 2.7;
+    const hill = (po2, p) => { const r = Math.pow(po2/p, nH); return (r/(1+r))*100; };
+
+    // Generate smooth curve path
+    function cPath(p) {
+      let d = '';
+      for (let i = 0; i <= xMax; i++) {
+        d += (i === 0 ? 'M' : 'L') + sx(i).toFixed(1) + ',' + sy(hill(i, p)).toFixed(1);
+      }
+      return d;
+    }
+
+    const p50F = 19, p50A = 26.6;
+    const y50 = sy(50);
+
+    // Grid
+    let g = '';
+    [25, 50, 75, 100].forEach(v => {
+      const y = sy(v);
+      g += `<line x1="${pad.left}" y1="${y.toFixed(1)}" x2="${W-pad.right}" y2="${y.toFixed(1)}" stroke="#24334f" stroke-width="0.6" ${v===50?'stroke-dasharray="4,2"':'stroke-dasharray="2,4"'}/>`;
+      g += `<text x="${pad.left-5}" y="${(y+3).toFixed(1)}" text-anchor="end" fill="#8d99ad" font-size="9">${v}</text>`;
+    });
+    [20,40,60,80,100,120].forEach(v => {
+      const x = sx(v);
+      g += `<line x1="${x.toFixed(1)}" y1="${pad.top}" x2="${x.toFixed(1)}" y2="${pad.top+pH_}" stroke="#24334f" stroke-width="0.6" stroke-dasharray="2,4"/>`;
+      g += `<text x="${x.toFixed(1)}" y="${pad.top+pH_+13}" text-anchor="middle" fill="#8d99ad" font-size="9">${v}</text>`;
+    });
+
+    // Patient coords
+    const px = sx(Math.min(pao2, xMax));
+    const pyObs = sy(satObs);
+    const pyExp = sy(satExp);
+
+    // P50 positions
+    const xF = sx(p50F), xA = sx(p50A);
+
+    // Dashed projection lines from patient point
+    const proj = `
+      <line x1="${px.toFixed(1)}" y1="${pyObs.toFixed(1)}" x2="${px.toFixed(1)}" y2="${(pad.top+pH_).toFixed(1)}" stroke="#f2705f" stroke-width="0.7" stroke-dasharray="3,3" opacity="0.45"/>
+      <line x1="${px.toFixed(1)}" y1="${pyObs.toFixed(1)}" x2="${pad.left}" y2="${pyObs.toFixed(1)}" stroke="#f2705f" stroke-width="0.7" stroke-dasharray="3,3" opacity="0.45"/>`;
+
+    // Delta bracket
+    let dBracket = '';
+    if (delta > 2) {
+      const bx = px + 8;
+      dBracket = `
+        <line x1="${bx.toFixed(1)}" y1="${pyExp.toFixed(1)}" x2="${bx.toFixed(1)}" y2="${pyObs.toFixed(1)}" stroke="#f2705f" stroke-width="1.5" opacity="0.65"/>
+        <line x1="${(bx-3).toFixed(1)}" y1="${pyExp.toFixed(1)}" x2="${(bx+3).toFixed(1)}" y2="${pyExp.toFixed(1)}" stroke="#f2705f" stroke-width="1" opacity="0.65"/>
+        <line x1="${(bx-3).toFixed(1)}" y1="${pyObs.toFixed(1)}" x2="${(bx+3).toFixed(1)}" y2="${pyObs.toFixed(1)}" stroke="#f2705f" stroke-width="1" opacity="0.65"/>
+        <text x="${(bx+6).toFixed(1)}" y="${((pyExp+pyObs)/2+4).toFixed(1)}" fill="#f2705f" font-size="9" font-weight="600">Δ ${delta.toFixed(1)}%</text>`;
+    }
+
+    // Shift arrow between P50s at y=50%
+    const shiftArr = `
+      <line x1="${xF.toFixed(1)}" y1="${(y50+12).toFixed(1)}" x2="${(xA-2).toFixed(1)}" y2="${(y50+12).toFixed(1)}" stroke="#e0a93c" stroke-width="1" marker-end="url(#arrR)"/>
+      <text x="${((xF+xA)/2).toFixed(1)}" y="${(y50+24).toFixed(1)}" text-anchor="middle" fill="#e0a93c" font-size="7.5" font-weight="500">→ derecha</text>`;
+
+    return `
+    <div style="margin-top:12px;background:#101b30;border:1px solid var(--border);border-radius:var(--radius);padding:10px 6px 6px;overflow-x:auto;">
+      <div style="text-align:center;font-family:var(--font-display);font-size:13px;font-weight:500;color:var(--accent);margin-bottom:4px;">Curva de Disociación de OxiHb</div>
+      <svg viewBox="0 0 ${W} ${H}" width="100%" style="display:block;max-width:${W}px;margin:0 auto;" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arrR" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,1 L5,3 L0,5" fill="#e0a93c"/></marker>
+        </defs>
+
+        <!-- Grid & axes -->
+        ${g}
+        <line x1="${pad.left}" y1="${pad.top}" x2="${pad.left}" y2="${pad.top+pH_}" stroke="#b9c4d4" stroke-width="1.2"/>
+        <line x1="${pad.left}" y1="${pad.top+pH_}" x2="${W-pad.right}" y2="${pad.top+pH_}" stroke="#b9c4d4" stroke-width="1.2"/>
+        <text x="${pad.left+pW/2}" y="${H-2}" text-anchor="middle" fill="#b9c4d4" font-size="10" font-weight="500">PaO₂ (mmHg)</text>
+        <text x="11" y="${pad.top+pH_/2}" text-anchor="middle" fill="#b9c4d4" font-size="10" font-weight="500" transform="rotate(-90,11,${pad.top+pH_/2})">SaO₂ (%)</text>
+
+        <!-- HbF curve -->
+        <path d="${cPath(p50F)}" fill="none" stroke="#55c98a" stroke-width="2.5" opacity="0.85"/>
+        <!-- HbA curve -->
+        <path d="${cPath(p50A)}" fill="none" stroke="#eab84f" stroke-width="2" stroke-dasharray="6,3" opacity="0.7"/>
+
+        <!-- P50 dots -->
+        <circle cx="${xF.toFixed(1)}" cy="${y50.toFixed(1)}" r="3.5" fill="#55c98a"/>
+        <text x="${(xF).toFixed(1)}" y="${(y50-9).toFixed(1)}" text-anchor="middle" fill="#55c98a" font-size="8" font-weight="600">P50</text>
+        <text x="${(xF).toFixed(1)}" y="${(y50-1).toFixed(1)}" text-anchor="middle" fill="#55c98a" font-size="7">HbF</text>
+
+        <circle cx="${xA.toFixed(1)}" cy="${y50.toFixed(1)}" r="3.5" fill="#eab84f"/>
+        <text x="${(xA).toFixed(1)}" y="${(y50-9).toFixed(1)}" text-anchor="middle" fill="#eab84f" font-size="8" font-weight="600">P50</text>
+        <text x="${(xA).toFixed(1)}" y="${(y50-1).toFixed(1)}" text-anchor="middle" fill="#eab84f" font-size="7">HbA</text>
+
+        ${shiftArr}
+
+        <!-- Projections -->
+        ${proj}
+
+        <!-- Expected point (hollow) -->
+        <circle cx="${px.toFixed(1)}" cy="${pyExp.toFixed(1)}" r="5" fill="none" stroke="#55c98a" stroke-width="1.8" stroke-dasharray="2,2" opacity="0.7"/>
+
+        <!-- Delta bracket -->
+        ${dBracket}
+
+        <!-- Patient point (solid) -->
+        <circle cx="${px.toFixed(1)}" cy="${pyObs.toFixed(1)}" r="6" fill="#f2705f" stroke="#0b0b0d" stroke-width="2"/>
+        <text x="${(pao2 > 95 ? px - 12 : px + 12).toFixed(1)}" y="${(pyObs - 10).toFixed(1)}" fill="#f2705f" font-size="9" font-weight="700" text-anchor="${pao2 > 95 ? 'end' : 'start'}">Paciente</text>
+
+        <!-- Legend -->
+        <rect x="${W-pad.right-108}" y="${pad.top+2}" width="104" height="36" rx="4" fill="#101b30" fill-opacity="0.9" stroke="#24334f" stroke-width="0.5"/>
+        <line x1="${W-pad.right-102}" y1="${pad.top+14}" x2="${W-pad.right-88}" y2="${pad.top+14}" stroke="#55c98a" stroke-width="2.5"/>
+        <text x="${W-pad.right-84}" y="${pad.top+17}" fill="#55c98a" font-size="8">HbF (P₅₀ = 19)</text>
+        <line x1="${W-pad.right-102}" y1="${pad.top+26}" x2="${W-pad.right-88}" y2="${pad.top+26}" stroke="#eab84f" stroke-width="2" stroke-dasharray="4,2"/>
+        <text x="${W-pad.right-84}" y="${pad.top+29}" fill="#eab84f" font-size="8">HbA (P₅₀ = 26.6)</text>
+
+      </svg>
+    </div>`;
+  }
+
+  // ── Reset ──
+  function resetForm() {
+    const inputs = document.querySelectorAll('#p1 .field-input');
+    inputs.forEach(i => { i.value = ''; i.classList.remove('error'); });
+    document.getElementById('resultsCard').classList.add('hidden');
+    document.getElementById('chkArterial').checked = true;
+    isArterial = true;
+    document.getElementById('arterialFields').classList.remove('hidden');
+    // Reset curve toggle
+    document.querySelectorAll('#curveToggle .toggle-btn').forEach((b, i) => {
+      b.classList.toggle('active', i === 0);
+    });
+    curveType = 'normal';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  // ══════════════════════════════════════
+  // MÓDULO 3: V/Q RATIO Y SHUNT D-I
+  // ══════════════════════════════════════
+
+  let selectedHb = 12.5;
+
+  function setHb(btn) {
+    document.querySelectorAll('#hbToggle .toggle-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    selectedHb = parseFloat(btn.dataset.val);
+  }
+
+  function calcVQ() {
+    const Hb = selectedHb;
+    const PACO2_ASSUMED = 40;
+    const SVO2 = 75;           // Mixed venous O2 saturation (%) — assumed fixed
+    const P50 = 26.6;
+    const N_HILL = 2.7;
+
+    // Collect valid pairs
+    const pairs = [];
+    for (let i = 1; i <= 8; i++) {
+      const fEl = document.getElementById('vq_f' + i);
+      const sEl = document.getElementById('vq_s' + i);
+      const f = parseFloat(fEl.value);
+      const s = parseFloat(sEl.value);
+      fEl.classList.remove('error');
+      sEl.classList.remove('error');
+
+      if (!isNaN(f) && !isNaN(s) && f >= 0.21 && f <= 1 && s >= 50 && s <= 100) {
+        pairs.push({ idx: i, fio2: f, spo2: s });
+      } else if (!isNaN(f) || !isNaN(s)) {
+        if (isNaN(f) || f < 0.21 || f > 1) fEl.classList.add('error');
+        if (isNaN(s) || s < 50 || s > 100) sEl.classList.add('error');
+      }
+    }
+
+    if (pairs.length < 3) {
+      alert('Se requieren mínimo 3 pares FiO₂/SpO₂ válidos');
+      return;
+    }
+
+    // Hill forward: estimate SaO2 from PO2
+    function hillFwd(po2) {
+      const r = Math.pow(po2 / P50, N_HILL);
+      return Math.min((r / (1 + r)) * 100, 100);
+    }
+
+    // V/Q from shunt (stepped lookup — iso-shunt lines)
+    function vqFromRL(rl) {
+      if (rl < 15) return 1.0;
+      if (rl < 25) return 0.8;
+      if (rl < 35) return 0.4;
+      return 0.2;
+    }
+
+    // Calculate for each pair
+    const results = [];
+    let sumVQ = 0, sumRL = 0;
+
+    for (const p of pairs) {
+      const PAO2 = p.fio2 * (PB - PH2O) - PACO2_ASSUMED / RQ;
+
+      // ScO2: pulmonary capillary saturation at PAO2 (Hill equation)
+      const ScO2 = hillFwd(PAO2);
+
+      // Shunt fraction (simplified saturation-based Berggren):
+      // Qs/Qt = (ScO2 - SpO2) / (ScO2 - SvO2)
+      let QsQt = 0;
+      if ((ScO2 - SVO2) !== 0) {
+        QsQt = (ScO2 - p.spo2) / (ScO2 - SVO2);
+      }
+      QsQt = Math.max(0, Math.min(QsQt, 1));
+
+      const rl = Math.round(QsQt * 100);
+
+      // V/Q continuous: (1 - Qs/Qt)² — efficiency of gas exchange
+      const vq = Math.round(Math.pow(Math.max(0, 1 - QsQt), 2) * 100) / 100;
+
+      results.push({ idx: p.idx, vq, rl, fio2: p.fio2, spo2: p.spo2 });
+      sumVQ += vq;
+      sumRL += rl;
+    }
+
+    const avgVQ = Math.round((sumVQ / pairs.length) * 100) / 100;
+    const avgRL = Math.round(sumRL / pairs.length);
+
+    // Fill table result rows
+    document.getElementById('vqValueRow').classList.remove('hidden');
+    document.getElementById('rlValueRow').classList.remove('hidden');
+
+    // Clear all first
+    for (let i = 1; i <= 8; i++) {
+      document.getElementById('vqv' + i).textContent = '—';
+      document.getElementById('rlv' + i).textContent = '—';
+      document.getElementById('vqv' + i).style.color = '';
+      document.getElementById('rlv' + i).style.color = '';
+    }
+
+    // Fill values
+    for (const r of results) {
+      const vqEl = document.getElementById('vqv' + r.idx);
+      const rlEl = document.getElementById('rlv' + r.idx);
+      vqEl.textContent = r.vq.toFixed(1);
+      rlEl.textContent = r.rl;
+
+      // Color by severity
+      const vqSev = severityVQ(r.vq);
+      const rlSev = severityRL(r.rl);
+      const sevColors = { target: 'var(--green)', moderate: 'var(--yellow)', severe: 'var(--red)' };
+      vqEl.style.color = sevColors[vqSev.level];
+      rlEl.style.color = sevColors[rlSev.level];
+    }
+
+    // Build summary results
+    const vqSev = severityVQ(avgVQ);
+    const rlSev = severityRL(avgRL);
+
+    let html = '';
+    html += resultRow('V-Q ratio (promedio)', avgVQ.toFixed(2), '', vqSev);
+    html += resultRow('Shunt D-I (promedio)', avgRL + '', '%', rlSev);
+
+    // ── Iso-Shunt & Iso-V/Q Charts ──
+    html += buildIsoShuntChart(results);
+    html += buildIsoVQChart(results);
+
+    const card = document.getElementById('vqResultsCard');
+    const body = document.getElementById('vqResultsBody');
+    body.innerHTML = html;
+    card.classList.remove('hidden');
+    card.classList.remove('animate-in');
+    void card.offsetWidth;
+    card.classList.add('animate-in');
+    card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Update Module 4 context panel with V/Q results
+    const m4vq = document.getElementById('m4_vq');
+    if (m4vq) {
+      m4vq.textContent = avgVQ.toFixed(2);
+      document.getElementById('m4_rl').textContent = avgRL + '%';
+      const lastP = results[results.length - 1];
+      document.getElementById('m4_spo2').textContent = lastP.spo2;
+      document.getElementById('m4_fio2').textContent = lastP.fio2;
+    }
+  }
+
+  // ── Iso-Shunt Curve Chart (SpO2 vs FiO2) ──
+  function buildIsoShuntChart(patientData) {
+    const W = 340, H = 240;
+    const pad = { top: 16, right: 14, bottom: 40, left: 42 };
+    const pW = W - pad.left - pad.right;
+    const pH = H - pad.top - pad.bottom;
+
+    const fio2Min = 0.21, fio2Max = 1.0;
+    const spo2Min = 70, spo2Max = 100;
+
+    const sx = v => pad.left + ((v - fio2Min) / (fio2Max - fio2Min)) * pW;
+    const sy = v => pad.top + pH - ((v - spo2Min) / (spo2Max - spo2Min)) * pH;
+
+    const P50 = 26.6, nH = 2.7, PB = 760, PH2O_C = 47, paco2 = 40, RQ_C = 0.8;
+    function hillFwdLocal(po2) { const r = Math.pow(po2/P50, nH); return Math.min((r/(1+r))*100, 100); }
+
+    // Generate iso-shunt curve: for a given shunt%, SpO2 = ScO2 - shunt*(ScO2-SvO2)/100
+    // ScO2 = Hill(PAO2), SvO2=75
+    function isoShuntCurve(shuntPct) {
+      let d = '';
+      for (let f = fio2Min; f <= fio2Max; f += 0.01) {
+        const PAO2 = f * (PB - PH2O_C) - paco2 / RQ_C;
+        const ScO2 = hillFwdLocal(PAO2);
+        const spo2 = ScO2 - (shuntPct / 100) * (ScO2 - 75);
+        const cx = sx(f), cy = sy(Math.max(spo2Min, Math.min(spo2, spo2Max)));
+        d += (f <= fio2Min + 0.01 ? 'M' : 'L') + cx.toFixed(1) + ',' + cy.toFixed(1);
+      }
+      return d;
+    }
+
+    const shunts = [10, 20, 30, 40];
+    const colors = ['#55c98a', '#8fd06a', '#ec7ba6', '#ec7ba6'];
+    const opacities = [0.9, 0.8, 0.9, 0.6];
+
+    let curves = '';
+    shunts.forEach((s, i) => {
+      curves += `<path d="${isoShuntCurve(s)}" fill="none" stroke="${colors[i]}" stroke-width="${i<2?2.5:2}" opacity="${opacities[i]}" ${i>=2?'stroke-dasharray="6,3"':''}/>`;
+      // Label
+      const labelF = i < 2 ? 0.25 : (i === 2 ? 0.5 : 0.7);
+      const PAO2l = labelF*(PB-PH2O_C)-paco2/RQ_C;
+      const ScO2l = hillFwdLocal(PAO2l);
+      const spo2l = ScO2l - (s/100)*(ScO2l-75);
+      curves += `<text x="${(sx(labelF)+4).toFixed(1)}" y="${(sy(spo2l)-5).toFixed(1)}" fill="${colors[i]}" font-size="9" font-weight="700">${s}%</text>`;
+    });
+
+    // Patient points (numbered, with jitter for overlapping)
+    let pts = '';
+    patientData.forEach((p, idx) => {
+      if (p.fio2 >= fio2Min && p.fio2 <= fio2Max) {
+        const jx = idx * 3; // slight horizontal offset to separate overlapping points
+        const cx = sx(p.fio2) + jx;
+        const cy = sy(p.spo2);
+        pts += `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="7" fill="#eab84f" stroke="#0b0b0d" stroke-width="1.5"/>`;
+        pts += `<text x="${cx.toFixed(1)}" y="${(cy+3.5).toFixed(1)}" text-anchor="middle" fill="#101b30" font-size="8" font-weight="700">${idx+1}</text>`;
+      }
+    });
+    let grid = '';
+    [75, 80, 85, 90, 95, 100].forEach(v => {
+      grid += `<line x1="${pad.left}" y1="${sy(v).toFixed(1)}" x2="${W-pad.right}" y2="${sy(v).toFixed(1)}" stroke="#24334f" stroke-width="0.5" stroke-dasharray="2,4"/>`;
+      grid += `<text x="${pad.left-5}" y="${(sy(v)+3).toFixed(1)}" text-anchor="end" fill="#8d99ad" font-size="8">${v}</text>`;
+    });
+    [0.21, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0].forEach(v => {
+      grid += `<line x1="${sx(v).toFixed(1)}" y1="${pad.top}" x2="${sx(v).toFixed(1)}" y2="${pad.top+pH}" stroke="#24334f" stroke-width="0.5" stroke-dasharray="2,4"/>`;
+      grid += `<text x="${sx(v).toFixed(1)}" y="${pad.top+pH+12}" text-anchor="middle" fill="#8d99ad" font-size="8">${v}</text>`;
+    });
+
+    return `
+    <div class="hist-chart-wrap" style="margin-top:14px;">
+      <div class="hist-chart-title">Curvas Iso-Shunt (SpO₂ vs FiO₂)</div>
+      <svg viewBox="0 0 ${W} ${H}" width="100%" style="display:block;max-width:${W}px;margin:0 auto;">
+        ${grid}
+        <line x1="${pad.left}" y1="${pad.top}" x2="${pad.left}" y2="${pad.top+pH}" stroke="#b9c4d4" stroke-width="1"/>
+        <line x1="${pad.left}" y1="${pad.top+pH}" x2="${W-pad.right}" y2="${pad.top+pH}" stroke="#b9c4d4" stroke-width="1"/>
+        <text x="${pad.left+pW/2}" y="${H-2}" text-anchor="middle" fill="#b9c4d4" font-size="9" font-weight="500">FiO₂</text>
+        <text x="10" y="${pad.top+pH/2}" text-anchor="middle" fill="#b9c4d4" font-size="9" font-weight="500" transform="rotate(-90,10,${pad.top+pH/2})">SpO₂ (%)</text>
+        ${curves}
+        ${pts}
+      </svg>
+    </div>`;
+  }
+
+  // ── Iso-V/Q Curve Chart (SpO2 vs FiO2) ──
+  function buildIsoVQChart(patientData) {
+    const W = 340, H = 240;
+    const pad = { top: 16, right: 14, bottom: 40, left: 42 };
+    const pW = W - pad.left - pad.right;
+    const pH = H - pad.top - pad.bottom;
+
+    const fio2Min = 0.15, fio2Max = 0.65;
+    const spo2Min = 70, spo2Max = 100;
+
+    const sx = v => pad.left + ((v - fio2Min) / (fio2Max - fio2Min)) * pW;
+    const sy = v => pad.top + pH - ((v - spo2Min) / (spo2Max - spo2Min)) * pH;
+
+    const P50 = 26.6, nH = 2.7, PB = 760, PH2O_C = 47;
+
+    // Iso-V/Q curve: for a given V/Q, calculate SpO2 at each FiO2
+    // Using the relationship: at a given V/Q, PAO2 determines ScO2
+    // and the shunt associated with that V/Q determines SpO2
+    // V/Q stepped: 0.8→shunt<15%, 0.4→shunt 25-34%, 0.2→shunt 35-44%, 0.15→shunt 45%+
+    // Map V/Q to representative shunt%
+    function vqToShunt(vq) {
+      if (vq >= 0.8) return 10;
+      if (vq >= 0.4) return 27;
+      if (vq >= 0.2) return 37;
+      return 45;
+    }
+
+    function hillFwdLocal(po2) { const r = Math.pow(po2/P50, nH); return Math.min((r/(1+r))*100, 100); }
+
+    function isoVQCurve(vq) {
+      const shunt = vqToShunt(vq);
+      let d = '', started = false;
+      for (let f = fio2Min; f <= fio2Max; f += 0.005) {
+        const paco2 = 40;
+        const PAO2 = f * (PB - PH2O_C) - paco2 / 0.8;
+        if (PAO2 < 0) continue;
+        const ScO2 = hillFwdLocal(PAO2);
+        const spo2 = ScO2 - (shunt / 100) * (ScO2 - 75);
+        if (spo2 < spo2Min) continue;
+        const cx = sx(f), cy = sy(Math.min(spo2, spo2Max));
+        d += (!started ? 'M' : 'L') + cx.toFixed(1) + ',' + cy.toFixed(1);
+        started = true;
+      }
+      return d;
+    }
+
+    const vqs = [0.8, 0.4, 0.2, 0.15];
+    const colors = ['#55c98a', '#d9924f', '#ec7ba6', '#f2705f'];
+
+    let curves = '';
+    vqs.forEach((vq, i) => {
+      const path = isoVQCurve(vq);
+      if (path) {
+        curves += `<path d="${path}" fill="none" stroke="${colors[i]}" stroke-width="2.5" opacity="0.85"/>`;
+        // Label at FiO2 where spo2 ≈ 92
+        const labelF = vq >= 0.8 ? 0.18 : vq >= 0.4 ? 0.30 : vq >= 0.2 ? 0.40 : 0.50;
+        const PAO2l = labelF*(PB-PH2O_C)-40/0.8;
+        if (PAO2l > 0) {
+          const ScO2l = hillFwdLocal(PAO2l);
+          const spo2l = ScO2l - (vqToShunt(vq)/100)*(ScO2l-75);
+          curves += `<text x="${(sx(labelF)+2).toFixed(1)}" y="${(sy(Math.max(spo2l,spo2Min))-6).toFixed(1)}" fill="${colors[i]}" font-size="10" font-weight="700">${vq}</text>`;
+        }
+      }
+    });
+
+    // Patient points (numbered, with jitter for overlapping)
+    let pts = '';
+    patientData.forEach((p, idx) => {
+      if (p.fio2 >= fio2Min && p.fio2 <= fio2Max) {
+        const jx = idx * 3;
+        const cx = sx(p.fio2) + jx;
+        const cy = sy(p.spo2);
+        pts += `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="7" fill="#eab84f" stroke="#0b0b0d" stroke-width="1.5"/>`;
+        pts += `<text x="${cx.toFixed(1)}" y="${(cy+3.5).toFixed(1)}" text-anchor="middle" fill="#101b30" font-size="8" font-weight="700">${idx+1}</text>`;
+      }
+    });
+    let grid = '';
+    [75, 80, 85, 90, 95, 100].forEach(v => {
+      grid += `<line x1="${pad.left}" y1="${sy(v).toFixed(1)}" x2="${W-pad.right}" y2="${sy(v).toFixed(1)}" stroke="#24334f" stroke-width="0.5" stroke-dasharray="2,4"/>`;
+      grid += `<text x="${pad.left-5}" y="${(sy(v)+3).toFixed(1)}" text-anchor="end" fill="#8d99ad" font-size="8">${v}</text>`;
+    });
+    [0.21, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6].forEach(v => {
+      if (v >= fio2Min && v <= fio2Max) {
+        grid += `<line x1="${sx(v).toFixed(1)}" y1="${pad.top}" x2="${sx(v).toFixed(1)}" y2="${pad.top+pH}" stroke="#24334f" stroke-width="0.5" stroke-dasharray="2,4"/>`;
+        grid += `<text x="${sx(v).toFixed(1)}" y="${pad.top+pH+12}" text-anchor="middle" fill="#8d99ad" font-size="8">${v}</text>`;
+      }
+    });
+
+    return `
+    <div class="hist-chart-wrap" style="margin-top:12px;">
+      <div class="hist-chart-title">Curvas Iso-V/Q (SpO₂ vs FiO₂)</div>
+      <svg viewBox="0 0 ${W} ${H}" width="100%" style="display:block;max-width:${W}px;margin:0 auto;">
+        ${grid}
+        <line x1="${pad.left}" y1="${pad.top}" x2="${pad.left}" y2="${pad.top+pH}" stroke="#b9c4d4" stroke-width="1"/>
+        <line x1="${pad.left}" y1="${pad.top+pH}" x2="${W-pad.right}" y2="${pad.top+pH}" stroke="#b9c4d4" stroke-width="1"/>
+        <text x="${pad.left+pW/2}" y="${H-2}" text-anchor="middle" fill="#b9c4d4" font-size="9" font-weight="500">FiO₂</text>
+        <text x="10" y="${pad.top+pH/2}" text-anchor="middle" fill="#b9c4d4" font-size="9" font-weight="500" transform="rotate(-90,10,${pad.top+pH/2})">SpO₂ (%)</text>
+        ${curves}
+        ${pts}
+      </svg>
+    </div>`;
+  }
+
+  // Severity (Elsayed)
+  function severityVQ(v) {
+    if (v > 0.75) return { level: 'target', label: 'Target' };
+    if (v >= 0.5) return { level: 'moderate', label: 'Moderado' };
+    return { level: 'severe', label: 'Severo' };
+  }
+  function severityRL(v) {
+    if (v < 10) return { level: 'target', label: 'Target' };
+    if (v <= 20) return { level: 'moderate', label: 'Moderado' };
+    return { level: 'severe', label: 'Severo' };
+  }
+
+  function resetVQ() {
+    for (let i = 1; i <= 8; i++) {
+      document.getElementById('vq_f' + i).value = '';
+      document.getElementById('vq_s' + i).value = '';
+      document.getElementById('vq_f' + i).classList.remove('error');
+      document.getElementById('vq_s' + i).classList.remove('error');
+      document.getElementById('vqv' + i).textContent = '—';
+      document.getElementById('rlv' + i).textContent = '—';
+    }
+    document.getElementById('vqValueRow').classList.add('hidden');
+    document.getElementById('rlValueRow').classList.add('hidden');
+    document.getElementById('vqResultsCard').classList.add('hidden');
+  }
+
+  // ══════════════════════════════════════
+  // MÓDULO 4: PRESIÓN, VOLUMEN Y VM
+  // ══════════════════════════════════════
+
+  let gruntingPresent = false;
+  // Store last V/Q results for context display
+  let lastVQresult = null;
+  let lastRLresult = null;
+  let lastSpO2 = null;
+  let lastFiO2 = null;
+
+  function setGrunt(btn) {
+    document.querySelectorAll('#gruntToggle .toggle-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    gruntingPresent = btn.dataset.val === 'yes';
+  }
+
+  // Override calcVQ to also store context for M4
+  const _origCalcVQ = calcVQ;
+  // We'll update context after VQ calculation via a wrapper
+  // Actually, let's just update the context display in calcM4
+
+  function calcM4() {
+    const peep = getVal('inPEEP');
+    const rr = getVal('inMeanRR');
+    const paco2 = getVal('inPaCO2_m4');
+    const weight = parseFloat(document.getElementById('inWeight').value);
+
+    if (peep === null || rr === null || paco2 === null) return;
+    if (isNaN(weight) || weight < 0.3 || weight > 10) {
+      document.getElementById('inWeight').classList.add('error');
+      return;
+    }
+    document.getElementById('inWeight').classList.remove('error');
+
+    // Alveolar ventilation equation:
+    // PaCO2 = (VCO2 * 863) / VA
+    // VA = Vt * (1 - VD/VT) * RR
+    // → Vt = (VCO2 * 863) / (PaCO2 * RR * (1 - VD/VT))
+    const VCO2_per_kg = 6;       // ml/kg/min (standard neonatal)
+    const VD_VT = 0.32;          // dead space fraction
+    const VCO2_total = VCO2_per_kg * weight;
+
+    // Tidal volume
+    const Vt_ml = (VCO2_total * 863) / (paco2 * rr * (1 - VD_VT));
+    const Vt_ml_kg = Vt_ml / weight;
+
+    // Minute ventilation
+    const MV = Vt_ml * rr;
+
+    // Build results
+    let html = '';
+    html += resultRow('Volumen tidal', Vt_ml_kg.toFixed(2), 'ml/kg', null);
+    const MV_display = Math.round(Vt_ml_kg * rr);
+    html += resultRow('Ventilación minuto', MV_display, 'ml/kg/min', null);
+
+    // Grunting alert
+    if (gruntingPresent) {
+      html += `<div class="curve-alert shifted-right" style="margin-top:10px;">⚠ Quejido/retracción presente — considerar soporte ventilatorio</div>`;
+    }
+
+    const card = document.getElementById('m4ResultsCard');
+    const body = document.getElementById('m4ResultsBody');
+    body.innerHTML = html;
+    card.classList.remove('hidden');
+    card.classList.remove('animate-in');
+    void card.offsetWidth;
+    card.classList.add('animate-in');
+    card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function resetM4() {
+    ['inPEEP', 'inMeanRR', 'inPaCO2_m4', 'inWeight'].forEach(id => {
+      document.getElementById(id).value = '';
+      document.getElementById(id).classList.remove('error');
+    });
+    document.getElementById('m4ResultsCard').classList.add('hidden');
+    document.querySelectorAll('#gruntToggle .toggle-btn').forEach((b, i) => {
+      b.classList.toggle('active', i === 1); // default NO
+    });
+    gruntingPresent = false;
+  }
+
+  // ══════════════════════════════════════
+  // MÓDULO 5: V/Q POST-INTERVENCIÓN
+  // ══════════════════════════════════════
+
+  let selectedHbPost = 12.5;
+
+  function setHbPost(btn) {
+    document.querySelectorAll('#hbTogglePost .toggle-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    selectedHbPost = parseFloat(btn.dataset.val);
+  }
+
+  // Reuse the same calculation logic as Module 3
+  function calcVQPost() {
+    const SVO2 = 75, P50 = 26.6, N_HILL = 2.7, PACO2_A = 40;
+    function hillFwdP(po2) { const r = Math.pow(po2/P50, N_HILL); return Math.min((r/(1+r))*100, 100); }
+    function vqFromRLP(rl) { if (rl<15) return 1.0; if (rl<25) return 0.8; if (rl<35) return 0.4; return 0.2; }
+
+    const pairs = [];
+    for (let i = 1; i <= 8; i++) {
+      const fEl = document.getElementById('vqp_f'+i);
+      const sEl = document.getElementById('vqp_s'+i);
+      const f = parseFloat(fEl.value), s = parseFloat(sEl.value);
+      fEl.classList.remove('error'); sEl.classList.remove('error');
+      if (!isNaN(f) && !isNaN(s) && f>=0.21 && f<=1 && s>=50 && s<=100) {
+        pairs.push({idx:i, fio2:f, spo2:s});
+      } else if (!isNaN(f)||!isNaN(s)) {
+        if (isNaN(f)||f<0.21||f>1) fEl.classList.add('error');
+        if (isNaN(s)||s<50||s>100) sEl.classList.add('error');
+      }
+    }
+    if (pairs.length < 3) { alert('Mínimo 3 pares'); return; }
+
+    const results = [];
+    let sumVQ = 0, sumRL = 0;
+    for (const p of pairs) {
+      const PAO2 = p.fio2*(PB-PH2O)-PACO2_A/RQ;
+      const ScO2 = hillFwdP(PAO2);
+      let QsQt = (ScO2-p.spo2)/(ScO2-SVO2);
+      QsQt = Math.max(0, Math.min(QsQt, 1));
+      const rl = Math.round(QsQt*100);
+      const vq = Math.round(Math.pow(Math.max(0, 1 - QsQt), 2) * 100) / 100;
+      results.push({idx:p.idx, vq, rl, fio2:p.fio2, spo2:p.spo2});
+      sumVQ += vq; sumRL += rl;
+    }
+    const avgVQ = Math.round((sumVQ/pairs.length)*100)/100;
+    const avgRL = Math.round(sumRL/pairs.length);
+
+    // Fill table
+    document.getElementById('vqpValueRow').classList.remove('hidden');
+    document.getElementById('rlpValueRow').classList.remove('hidden');
+    for (let i=1;i<=8;i++) {
+      document.getElementById('vqpv'+i).textContent='—';
+      document.getElementById('rlpv'+i).textContent='—';
+      document.getElementById('vqpv'+i).style.color='';
+      document.getElementById('rlpv'+i).style.color='';
+    }
+    const sevColors = {target:'var(--green)', moderate:'var(--yellow)', severe:'var(--red)'};
+    for (const r of results) {
+      const vqEl=document.getElementById('vqpv'+r.idx);
+      const rlEl=document.getElementById('rlpv'+r.idx);
+      vqEl.textContent=r.vq.toFixed(1);
+      rlEl.textContent=r.rl;
+      vqEl.style.color=sevColors[severityVQ(r.vq).level];
+      rlEl.style.color=sevColors[severityRL(r.rl).level];
+    }
+
+    // Build results with comparison to pre-intervention
+    let html = '';
+    html += resultRow('V-Q ratio post (promedio)', avgVQ.toFixed(2), '', severityVQ(avgVQ));
+    html += resultRow('Shunt D-I post (promedio)', avgRL+'', '%', severityRL(avgRL));
+
+    // Comparison with pre-intervention (Module 3)
+    const preVQ = document.getElementById('m4_vq');
+    if (preVQ && preVQ.textContent !== '—') {
+      const preVQval = parseFloat(preVQ.textContent);
+      const preRLval = parseInt(document.getElementById('m4_rl').textContent);
+      const deltaVQ = avgVQ - preVQval;
+      const deltaRL = avgRL - preRLval;
+
+      let compType, compIcon, compText;
+      if (deltaVQ > 0 && deltaRL < 0) {
+        compType = 'ok'; compIcon = '📈'; compText = 'Mejoría post-intervención';
+      } else if (deltaVQ < 0 && deltaRL > 0) {
+        compType = 'danger'; compIcon = '📉'; compText = 'Deterioro post-intervención';
+      } else {
+        compType = 'warning'; compIcon = '↔'; compText = 'Cambio mixto post-intervención';
+      }
+
+      const bgC = {ok:'var(--green-bg)',warning:'var(--yellow-bg)',danger:'var(--red-bg)'};
+      const txC = {ok:'var(--green)',warning:'var(--yellow)',danger:'var(--red)'};
+      const brC = {ok:'rgba(74,124,89,0.25)',warning:'rgba(158,124,26,0.25)',danger:'rgba(185,74,62,0.25)'};
+
+      html += `<div style="background:${bgC[compType]};color:${txC[compType]};border:1px solid ${brC[compType]};border-radius:var(--radius-sm);padding:10px 12px;margin-top:12px;">
+        <div style="font-size:13px;font-weight:600;">${compIcon} ${compText}</div>
+        <div style="font-size:11px;opacity:0.85;margin-top:4px;">V/Q: ${preVQval.toFixed(2)} → ${avgVQ.toFixed(2)} (Δ ${deltaVQ>0?'+':''}${deltaVQ.toFixed(2)}) · Shunt: ${preRLval}% → ${avgRL}% (Δ ${deltaRL>0?'+':''}${deltaRL}%)</div>
+      </div>`;
+    }
+
+    // Charts
+    html += buildIsoShuntChart(results);
+    html += buildIsoVQChart(results);
+
+    const card = document.getElementById('vqpResultsCard');
+    const body = document.getElementById('vqpResultsBody');
+    body.innerHTML = html;
+    card.classList.remove('hidden');
+    card.classList.remove('animate-in');
+    void card.offsetWidth;
+    card.classList.add('animate-in');
+    card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function resetVQPost() {
+    for (let i=1;i<=8;i++) {
+      document.getElementById('vqp_f'+i).value='';
+      document.getElementById('vqp_s'+i).value='';
+      document.getElementById('vqp_f'+i).classList.remove('error');
+      document.getElementById('vqp_s'+i).classList.remove('error');
+      document.getElementById('vqpv'+i).textContent='—';
+      document.getElementById('rlpv'+i).textContent='—';
+    }
+    document.getElementById('vqpValueRow').classList.add('hidden');
+    document.getElementById('rlpValueRow').classList.add('hidden');
+    document.getElementById('vqpResultsCard').classList.add('hidden');
+  }
+</script>
+
+<script>
+  /* ══ Navegación por pestañas ══ */
+  function goTab(id){
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('active', p.id === id));
+    document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.panel === id));
+    const tab = document.querySelector('.tab[data-panel="'+id+'"]');
+    if (tab) tab.scrollIntoView({behavior:'smooth', block:'nearest', inline:'center'});
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+  document.querySelectorAll('.tab').forEach(t => {
+    t.addEventListener('click', () => goTab(t.dataset.panel));
+  });
+
+  /* ══ Uso sin conexión: registra el service worker ══ */
+  /* Solo funciona servido por http(s); desde un archivo local se ignora. */
+  if ('serviceWorker' in navigator && location.protocol.indexOf('http') === 0) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('./sw.js').catch(function () {});
+    });
+  }
+
+  /* ══ Aviso de instalación: solo en iOS, en Safari, fuera de la app ══ */
+  (function(){
+    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+              (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    var standalone = window.navigator.standalone === true ||
+                     window.matchMedia('(display-mode: standalone)').matches;
+    if (iOS && !standalone) document.getElementById('installTip').classList.add('show');
+  })();
+
+  /* ══ Reinicio global — limpia los seis módulos ══ */
+  function resetAll(){
+    resetForm();
+    resetVQ();
+    resetM4();
+    resetVQPost();
+    ['m4_vq','m4_spo2','m4_rl','m4_fio2'].forEach(id => {
+      document.getElementById(id).textContent = '—';
+    });
+    goTab('p1');
+  }
+</script>
+</body>
+</html>
